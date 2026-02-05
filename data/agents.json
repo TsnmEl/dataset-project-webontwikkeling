@@ -1,242 +1,506 @@
 [
   {
-    "id": 101,
-    "name": "Jett",
-    "description": "Jett is a fast and agile agent who excels at aggressive plays and quick eliminations.",
-    "age": 20,
-    "origin": "South Korea",
-    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/jett.png",
-    "difficulty": "easy",
-    "abilities": ["Dash", "Updraft", "Cloudburst", "Blade Storm"],
-    "role": {
-      "id": "ROLE-001",
-      "name": "Duelist",
-      "playstyle": "offensive",
-      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/duelist.png"
-    }
-  },
-  {
-    "id": 102,
-    "name": "Omen",
-    "description": "Omen controls the battlefield with smokes and unpredictable teleportation.",
-    "age": 35,
-    "origin": "Unknown",
-    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/omen.png",
-    "difficulty": "medium",
-    "abilities": ["Dark Cover", "Shrouded Step", "Paranoia", "From the Shadows"],
-    "role": {
-      "id": "ROLE-002",
-      "name": "Controller",
-      "playstyle": "tactical",
-      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/controller.png"
-    }
-  },
-  {
-    "id": 103,
-    "name": "Sova",
-    "description": "Sova tracks, finds, and eliminates enemies using precise recon abilities.",
-    "age": 30,
-    "origin": "Russia",
-    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/sova.png",
-    "difficulty": "medium",
-    "abilities": ["Recon Bolt", "Shock Bolt", "Owl Drone", "Hunter's Fury"],
-    "role": {
-      "id": "ROLE-003",
-      "name": "Initiator",
-      "playstyle": "support",
-      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/initiator.png"
-    }
-  },
-  {
-    "id": 104,
-    "name": "Sage",
-    "description": "Sage keeps her team alive and controls the battlefield with defensive utility.",
-    "age": 28,
-    "origin": "China",
-    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/sage.png",
-    "difficulty": "easy",
-    "abilities": ["Slow Orb", "Healing Orb", "Barrier Orb", "Resurrection"],
-    "role": {
-      "id": "ROLE-004",
-      "name": "Sentinel",
-      "playstyle": "defensive",
-      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/sentinel.png"
-    }
-  },
-  {
-    "id": 105,
-    "name": "Phoenix",
-    "description": "Phoenix uses fire-based abilities to control fights and heal himself.",
-    "age": 23,
-    "origin": "England",
-    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/phoenix.png",
-    "difficulty": "easy",
-    "abilities": ["Curveball", "Hot Hands", "Blaze", "Run It Back"],
-    "role": {
-      "id": "ROLE-001",
-      "name": "Duelist",
-      "playstyle": "offensive",
-      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/duelist.png"
-    }
-  },
-  {
-    "id": 106,
+    "id": "AGENT-001",
+    "agentNumber": 1,
     "name": "Brimstone",
     "description": "Brimstone provides powerful smokes and orbital strikes to support his team.",
-    "age": 45,
     "origin": "United States",
-    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/brimstone.png",
+    "isHuman": true,
+    "releaseDate": "07-04-2020",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Brimstone_icon.png",
     "difficulty": "easy",
     "abilities": ["Incendiary", "Stim Beacon", "Sky Smoke", "Orbital Strike"],
     "role": {
       "id": "ROLE-002",
       "name": "Controller",
       "playstyle": "tactical",
-      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/controller.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/ControllerClassSymbol.png"
     }
   },
   {
-    "id": 107,
+    "id": "AGENT-002",
+    "agentNumber": 2,
+    "name": "Viper",
+    "description": "Viper deploys an array of poisonous chemical devices to control the battlefield",
+    "origin": "United States",
+    "isHuman": true,
+    "releaseDate": "07-04-2020",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Viper_icon.png",
+    "difficulty": "hard",
+    "abilities": ["Snake Bite", "Poison Cloud", "Toxic Screen", "Viper's Pit"],
+    "role": {
+      "id": "ROLE-002",
+      "name": "Controller",
+      "playstyle": "tactical",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/ControllerClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-003",
+    "agentNumber": 3,
+    "name": "Omen",
+    "description": "Omen controls the battlefield with smokes and unpredictable teleportation.",
+    "origin": "Unknown",
+    "isHuman": true,
+    "releaseDate": "07-04-2020",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Omen_icon.png",
+    "difficulty": "medium",
+    "abilities": ["Dark Cover", "Shrouded Step", "Paranoia", "From the Shadows"],
+    "role": {
+      "id": "ROLE-002",
+      "name": "Controller",
+      "playstyle": "tactical",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/ControllerClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-004",
+    "agentNumber": 4,
     "name": "Killjoy",
     "description": "Killjoy locks down areas using gadgets, turrets, and traps.",
-    "age": 22,
     "origin": "Germany",
-    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/killjoy.png",
+    "isHuman": true,
+    "releaseDate": "04-08-2020",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Killjoy_icon.png",
     "difficulty": "medium",
     "abilities": ["Alarmbot", "Nanoswarm", "Turret", "Lockdown"],
     "role": {
       "id": "ROLE-004",
       "name": "Sentinel",
       "playstyle": "defensive",
-      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/sentinel.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/SentinelClassSymbol.png"
     }
   },
   {
-    "id": 108,
-    "name": "Reyna",
-    "description": "Reyna thrives in one-on-one combat and snowballs from kills.",
-    "age": 25,
-    "origin": "Mexico",
-    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/reyna.png",
-    "difficulty": "hard",
-    "abilities": ["Leer", "Devour", "Dismiss", "Empress"],
-    "role": {
-      "id": "ROLE-001",
-      "name": "Duelist",
-      "playstyle": "offensive",
-      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/duelist.png"
-    }
-  },
-  {
-    "id": 109,
-    "name": "Breach",
-    "description": "Breach clears paths with powerful crowd-control abilities.",
-    "age": 32,
-    "origin": "Sweden",
-    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/breach.png",
-    "difficulty": "medium",
-    "abilities": ["Flashpoint", "Fault Line", "Aftershock", "Rolling Thunder"],
-    "role": {
-      "id": "ROLE-003",
-      "name": "Initiator",
-      "playstyle": "support",
-      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/initiator.png"
-    }
-  },
-  {
-    "id": 110,
+    "id": "AGENT-005",
+    "agentNumber": 5,
     "name": "Cypher",
     "description": "Cypher gathers information and controls flanks with surveillance tools.",
-    "age": 33,
     "origin": "Morocco",
-    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/cypher.png",
+    "isHuman": true,
+    "releaseDate": "07-04-2020",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Cypher_icon.png",
     "difficulty": "medium",
     "abilities": ["Trapwire", "Cyber Cage", "Spycam", "Neural Theft"],
     "role": {
       "id": "ROLE-004",
       "name": "Sentinel",
       "playstyle": "defensive",
-      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/sentinel.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/SentinelClassSymbol.png"
     }
   },
   {
-    "id": 111,
+    "id": "AGENT-006",
+    "agentNumber": 6,
+    "name": "Sova",
+    "description": "Sova tracks, finds, and eliminates enemies using precise recon abilities.",
+    "origin": "Russia",
+    "isHuman": true,
+    "releaseDate": "07-04-2020",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Sova_icon.png",
+    "difficulty": "medium",
+    "abilities": ["Recon Bolt", "Shock Bolt", "Owl Drone", "Hunter's Fury"],
+    "role": {
+      "id": "ROLE-003",
+      "name": "Initiator",
+      "playstyle": "support",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/InitiatorClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-007",
+    "agentNumber": 7,
+    "name": "Sage",
+    "description": "Sage keeps her team alive and controls the battlefield with defensive utility.",
+    "origin": "China",
+    "isHuman": false,
+    "releaseDate": "07-04-2020",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Sage_icon.png",
+    "difficulty": "easy",
+    "abilities": ["Slow Orb", "Healing Orb", "Barrier Orb", "Resurrection"],
+    "role": {
+      "id": "ROLE-004",
+      "name": "Sentinel",
+      "playstyle": "defensive",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/SentinelClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-008",
+    "agentNumber": 9,
+    "name": "Phoenix",
+    "description": "Phoenix uses fire-based abilities to control fights and heal himself.",
+    "origin": "England",
+    "isHuman": false,
+    "releaseDate": "07-04-2020",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Phoenix_icon.png",
+    "difficulty": "easy",
+    "abilities": ["Curveball", "Hot Hands", "Blaze", "Run It Back"],
+    "role": {
+      "id": "ROLE-001",
+      "name": "Duelist",
+      "playstyle": "offensive",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/DuelistClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-009",
+    "agentNumber": 10,
+    "name": "Jett",
+    "description": "Jett is a fast and agile agent who excels at aggressive plays and quick eliminations.",
+    "origin": "South Korea",
+    "isHuman": false,
+    "releaseDate": "07-04-2020",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Jett_icon.png",
+    "difficulty": "easy",
+    "abilities": ["Dash", "Updraft", "Cloudburst", "Blade Storm"],
+    "role": {
+      "id": "ROLE-001",
+      "name": "Duelist",
+      "playstyle": "offensive",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/DuelistClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-010",
+    "agentNumber": 11,
+    "name": "Reyna",
+    "description": "Reyna thrives in one-on-one combat and snowballs from kills.",
+    "origin": "Mexico",
+    "isHuman": false,
+    "releaseDate": "02-06-2020",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Reyna_icon.png",
+    "difficulty": "hard",
+    "abilities": ["Leer", "Devour", "Dismiss", "Empress"],
+    "role": {
+      "id": "ROLE-001",
+      "name": "Duelist",
+      "playstyle": "offensive",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/DuelistClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-011",
+    "agentNumber": 12,
     "name": "Raze",
     "description": "Raze uses explosives to clear areas and deal massive damage.",
-    "age": 24,
     "origin": "Brazil",
-    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/raze.png",
+    "isHuman": true,
+    "releaseDate": "07-04-2020",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Raze_icon.png",
     "difficulty": "medium",
     "abilities": ["Boom Bot", "Blast Pack", "Paint Shells", "Showstopper"],
     "role": {
       "id": "ROLE-001",
       "name": "Duelist",
       "playstyle": "offensive",
-      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/duelist.png"
-      }
-  },
-  {
-    "id": 112,
-    "name": "Clove",
-    "description": "Clove manipulates life and death, continuing to influence the round even after being eliminated.",
-    "age": 21,
-    "origin": "Scotland",
-    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/clove.png",
-    "difficulty": "hard",
-    "abilities": ["Meddle", "Ruse", "Pick-Me-Up", "Not Dead Yet"],
-    "role": {
-      "id": "ROLE-002",
-      "name": "Controller",
-      "playstyle": "tactical",
-      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/controller.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/DuelistClassSymbol.png"
     }
   },
   {
-    "id": 113,
-    "name": "Neon",
-    "description": "Neon sprints across the battlefield using incredible speed and electric abilities.",
-    "age": 19,
-    "origin": "Philippines",
-    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/neon.png",
-    "difficulty": "hard",
-    "abilities": ["Fast Lane", "Relay Bolt", "High Gear", "Overdrive"],
+    "id": "AGENT-012",
+    "agentNumber": 13,
+    "name": "Breach",
+    "description": "Breach clears paths with powerful crowd-control abilities.",
+    "origin": "Sweden",
+    "isHuman": true,
+    "releaseDate": "07-04-2020",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Breach_icon.png",
+    "difficulty": "medium",
+    "abilities": ["Flashpoint", "Fault Line", "Aftershock", "Rolling Thunder"],
     "role": {
-      "id": "ROLE-001",
-      "name": "Duelist",
-      "playstyle": "offensive",
-      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/duelist.png"
+      "id": "ROLE-003",
+      "name": "Initiator",
+      "playstyle": "support",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/InitiatorClassSymbol.png"
     }
   },
   {
-    "id": 114,
-    "name": "Chamber",
-    "description": "Chamber uses precision weapons and teleportation to control key positions.",
-    "age": 35,
-    "origin": "France",
-    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/chamber.png",
-    "difficulty": "hard",
-    "abilities": ["Trademark", "Headhunter", "Rendezvous", "Tour de Force"],
-    "role": {
-      "id": "ROLE-004",
-      "name": "Sentinel",
-      "playstyle": "defensive",
-      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/sentinel.png"
-    }
-  },
-  {
-    "id": 115,
+    "id": "AGENT-013",
+    "agentNumber": 14,
     "name": "Skye",
     "description": "Skye supports her team by healing allies and scouting enemies with animals.",
-    "age": 27,
     "origin": "Australia",
-    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/skye.png",
+    "isHuman": false,
+    "releaseDate": "27-10-2020",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Skye_icon.png",
     "difficulty": "medium",
     "abilities": ["Regrowth", "Trailblazer", "Guiding Light", "Seekers"],
     "role": {
       "id": "ROLE-003",
       "name": "Initiator",
       "playstyle": "support",
-      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/initiator.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/InitiatorClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-014",
+    "agentNumber": 15,
+    "name": "Yoru",
+    "description": "Yoru is a stealthy duelist who uses tricks and deception to infiltrate enemy lines.",
+    "origin": "Japan",
+    "isHuman": false,
+    "releaseDate": "12-01-2021",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Yoru_icon.png",
+    "difficulty": "hard",
+    "abilities": ["Fakeout", "Gatecrash", "Blindside", "Dimensional Drift"],
+    "role": {
+      "id": "ROLE-001",
+      "name": "Duelist",
+      "playstyle": "offensive",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/DuelistClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-015",
+    "agentNumber": 16,
+    "name": "Astra",
+    "description": "Astra controls the battlefield from afar, using cosmic powers to manipulate space and time.",
+    "origin": "Ghana",
+    "isHuman": false,
+    "releaseDate": "02-03-2021",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Astra_icon.png",
+    "difficulty": "hard",
+    "abilities": ["Gravity Well", "Nova Pulse", "Nebula / Dissipate", "Astral Form / Cosmic Divide"],
+    "role": {
+      "id": "ROLE-002",
+      "name": "Controller",
+      "playstyle": "tactical",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/ControllerClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-016",
+    "agentNumber": 17,
+    "name": "KAY/O",
+    "description": "KAY/O is a robot initiator who suppresses enemy abilities and leads aggressive pushes.",
+    "origin": "Alternate Timeline Earth",
+    "isHuman": false,
+    "releaseDate": "22-06-2021",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/KAYO_icon.png",
+    "difficulty": "medium",
+    "abilities": ["FRAG/ment", "FLASH/drive", "ZERO/point", "NULL/cmd"],
+    "role": {
+      "id": "ROLE-003",
+      "name": "Initiator",
+      "playstyle": "support",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/InitiatorClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-017",
+    "agentNumber": 18,
+    "name": "Chamber",
+    "description": "Chamber uses precision weapons and teleportation to control key positions.",
+    "origin": "France",
+    "isHuman": true,
+    "releaseDate": "16-11-2021",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Chamber_icon.png",
+    "difficulty": "hard",
+    "abilities": ["Trademark", "Headhunter", "Rendezvous", "Tour de Force"],
+    "role": {
+      "id": "ROLE-004",
+      "name": "Sentinel",
+      "playstyle": "defensive",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/SentinelClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-018",
+    "agentNumber": 19,
+    "name": "Neon",
+    "description": "Neon sprints across the battlefield using incredible speed and electric abilities.",
+    "origin": "Philippines",
+    "isHuman": false,
+    "releaseDate": "11-01-2022",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Neon_icon.png",
+    "difficulty": "hard",
+    "abilities": ["Fast Lane", "Relay Bolt", "High Gear", "Overdrive"],
+    "role": {
+      "id": "ROLE-001",
+      "name": "Duelist",
+      "playstyle": "offensive",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/DuelistClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-019",
+    "agentNumber": 20,
+    "name": "Fade",
+    "description": "Fade is a tracker initiator who hunts enemies and reveals their positions to her team.",
+    "origin": "Turkey",
+    "isHuman": false,
+    "releaseDate": "27-04-2022",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Fade_icon.png",
+    "difficulty": "medium",
+    "abilities": ["Prowler", "Seize", "Haunt", "Nightfall"],
+    "role": {
+      "id": "ROLE-003",
+      "name": "Initiator",
+      "playstyle": "support",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/InitiatorClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-020",
+    "agentNumber": 21,
+    "name": "Harbor",
+    "description": "Harbor uses water-based abilities to block sightlines and control enemy movement.",
+    "origin": "India",
+    "isHuman": true,
+    "releaseDate": "18-10-2022",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Harbor_icon.png",
+    "difficulty": "medium",
+    "abilities": ["Cascade", "Cove", "High Tide", "Reckoning"],
+    "role": {
+      "id": "ROLE-002",
+      "name": "Controller",
+      "playstyle": "tactical",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/ControllerClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-021",
+    "agentNumber": 22,
+    "name": "Gekko",
+    "description": "Gekko unleashes creatures to attack, scout, and disorient enemies, helping his team push forward.",
+    "origin": "United States",
+    "isHuman": true,
+    "releaseDate": "07-03-2023",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Gekko_icon.png",
+    "difficulty": "medium",
+    "abilities": ["Mosh Pit", "Wingman", "Dizzy", "Thrash"],
+    "role": {
+      "id": "ROLE-003",
+      "name": "Initiator",
+      "playstyle": "support",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/InitiatorClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-022",
+    "agentNumber": 23,
+    "name": "Deadlock",
+    "description": "Deadlock secures the battlefield with advanced nanowire technology, trapping foes and locking down areas.",
+    "origin": "Norway",
+    "isHuman": true,
+    "releaseDate": "27-06-2023",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Deadlock_icon.png",
+    "difficulty": "medium",
+    "abilities": ["Sonic Sensor", "Barrier Mesh", "GravNet", "Annihilation"],
+    "role": {
+      "id": "ROLE-004",
+      "name": "Sentinel",
+      "playstyle": "defensive",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/SentinelClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-023",
+    "agentNumber": 24,
+    "name": "Iso",
+    "description": "Iso isolates enemies and dominates 1v1 engagements with precision and resilience.",
+    "origin": "China",
+    "isHuman": false,
+    "releaseDate": "31-10-2023",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Iso_icon.png",
+    "difficulty": "medium",
+    "abilities": ["Contingency", "Undercut", "Double Tap", "Kill Contract"],
+    "role": {
+      "id": "ROLE-001",
+      "name": "Duelist",
+      "playstyle": "offensive",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/DuelistClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-024",
+    "agentNumber": 25,
+    "name": "Clove",
+    "description": "Clove manipulates life and death, continuing to influence the round even after being eliminated.",
+    "origin": "Scotland",
+    "isHuman": false,
+    "releaseDate": "26-03-2024",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Clove_icon.png",
+    "difficulty": "hard",
+    "abilities": ["Meddle", "Ruse", "Pick-Me-Up", "Not Dead Yet"],
+    "role": {
+      "id": "ROLE-002",
+      "name": "Controller",
+      "playstyle": "tactical",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/ControllerClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-025",
+    "agentNumber": 26,
+    "name": "Vyse",
+    "description": "Vyse unleashes liquid metal to isolate, trap, and disarm her enemies.",
+    "origin": "Unknown",
+    "isHuman": false,
+    "releaseDate": "28-08-2024",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Vyse_icon.png",
+    "difficulty": "medium",
+    "abilities": ["Shear", "Arc Rose", "Razorvine", "Steel Garden"],
+    "role": {
+      "id": "ROLE-004",
+      "name": "Sentinel",
+      "playstyle": "defensive",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/SentinelClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-026",
+    "agentNumber": 27,
+    "name": "Tejo",
+    "description": "Tejo pressures enemies with precision strikes, explosives, and tactical missiles.",
+    "origin": "Colombia",
+    "isHuman": true,
+    "releaseDate": "08-01-2025",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Tejo_icon.png",
+    "difficulty": "medium",
+    "abilities": ["Special Delivery", "Stealth Drone", "Guided Salvo", "Armageddon"],
+    "role": {
+      "id": "ROLE-003",
+      "name": "Initiator",
+      "playstyle": "support",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/InitiatorClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-027",
+    "agentNumber": 28,
+    "name": "Waylay",
+    "description": "Waylay harnesses the power of light to move swiftly, disrupt enemies and capitalize on speed.",
+    "origin": "Thailand",
+    "isHuman": false,
+    "releaseDate": "05-03-2025",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Waylay_icon.png",
+    "difficulty": "hard",
+    "abilities": ["Saturate", "Light Speed", "Refract", "Convergent Paths"],
+    "role": {
+      "id": "ROLE-001",
+      "name": "Duelist",
+      "playstyle": "offensive",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/DuelistClassSymbol.png"
+    }
+  },
+  {
+    "id": "AGENT-028",
+    "agentNumber": 29,
+    "name": "Veto",
+    "description": "Veto neutralizes enemy tech and powers, forcing opponents to rely on raw gunplay.",
+    "origin": "Senegal",
+    "isHuman": false,
+    "releaseDate": "07-10-2025",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Veto_icon.png",
+    "difficulty": "medium",
+    "abilities": ["Crosscut", "Chokehold", "Interceptor", "Evolution"],
+    "role": {
+      "id": "ROLE-004",
+      "name": "Sentinel",
+      "playstyle": "defensive",
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/SentinelClassSymbol.png"
     }
   }
 ]
