@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ROLE-001",
+    "name": "Duelist",
+    "description": "Aggressive agents who focus on eliminations and opening up sites.",
+    "iconUrl": "https://example.com/icons/roles/duelist.png",
+    "playstyle": "offensive",
+    "recommendedForBeginners": true,
+    "primaryResponsibility": "Securing kills and taking first engagements"
+  },
+  {
+    "id": "ROLE-002",
+    "name": "Controller",
+    "description": "Agents who control the battlefield using smokes and vision denial.",
+    "iconUrl": "https://example.com/icons/roles/controller.png",
+    "playstyle": "tactical",
+    "recommendedForBeginners": false,
+    "primaryResponsibility": "Blocking sightlines and supporting the team"
+  },
+  {
+    "id": "ROLE-003",
+    "name": "Initiator",
+    "description": "Agents who start engagements by gathering information and disrupting enemies.",
+    "iconUrl": "https://example.com/icons/roles/initiator.png",
+    "playstyle": "support",
+    "recommendedForBeginners": false,
+    "primaryResponsibility": "Providing information and enabling team fights"
+  },
+  {
+    "id": "ROLE-004",
+    "name": "Sentinel",
+    "description": "Defensive agents who specialize in locking down sites and watching flanks.",
+    "iconUrl": "https://example.com/icons/roles/sentinel.png",
+    "playstyle": "defensive",
+    "recommendedForBeginners": true,
+    "primaryResponsibility": "Defending objectives and slowing enemy pushes"
+  }
+]

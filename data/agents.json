@@ -1,0 +1,242 @@
+[
+  {
+    "id": 101,
+    "name": "Jett",
+    "description": "Jett is a fast and agile agent who excels at aggressive plays and quick eliminations.",
+    "age": 20,
+    "origin": "South Korea",
+    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/jett.png",
+    "difficulty": "easy",
+    "abilities": ["Dash", "Updraft", "Cloudburst", "Blade Storm"],
+    "role": {
+      "id": "ROLE-001",
+      "name": "Duelist",
+      "playstyle": "offensive",
+      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/duelist.png"
+    }
+  },
+  {
+    "id": 102,
+    "name": "Omen",
+    "description": "Omen controls the battlefield with smokes and unpredictable teleportation.",
+    "age": 35,
+    "origin": "Unknown",
+    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/omen.png",
+    "difficulty": "medium",
+    "abilities": ["Dark Cover", "Shrouded Step", "Paranoia", "From the Shadows"],
+    "role": {
+      "id": "ROLE-002",
+      "name": "Controller",
+      "playstyle": "tactical",
+      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/controller.png"
+    }
+  },
+  {
+    "id": 103,
+    "name": "Sova",
+    "description": "Sova tracks, finds, and eliminates enemies using precise recon abilities.",
+    "age": 30,
+    "origin": "Russia",
+    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/sova.png",
+    "difficulty": "medium",
+    "abilities": ["Recon Bolt", "Shock Bolt", "Owl Drone", "Hunter's Fury"],
+    "role": {
+      "id": "ROLE-003",
+      "name": "Initiator",
+      "playstyle": "support",
+      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/initiator.png"
+    }
+  },
+  {
+    "id": 104,
+    "name": "Sage",
+    "description": "Sage keeps her team alive and controls the battlefield with defensive utility.",
+    "age": 28,
+    "origin": "China",
+    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/sage.png",
+    "difficulty": "easy",
+    "abilities": ["Slow Orb", "Healing Orb", "Barrier Orb", "Resurrection"],
+    "role": {
+      "id": "ROLE-004",
+      "name": "Sentinel",
+      "playstyle": "defensive",
+      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/sentinel.png"
+    }
+  },
+  {
+    "id": 105,
+    "name": "Phoenix",
+    "description": "Phoenix uses fire-based abilities to control fights and heal himself.",
+    "age": 23,
+    "origin": "England",
+    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/phoenix.png",
+    "difficulty": "easy",
+    "abilities": ["Curveball", "Hot Hands", "Blaze", "Run It Back"],
+    "role": {
+      "id": "ROLE-001",
+      "name": "Duelist",
+      "playstyle": "offensive",
+      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/duelist.png"
+    }
+  },
+  {
+    "id": 106,
+    "name": "Brimstone",
+    "description": "Brimstone provides powerful smokes and orbital strikes to support his team.",
+    "age": 45,
+    "origin": "United States",
+    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/brimstone.png",
+    "difficulty": "easy",
+    "abilities": ["Incendiary", "Stim Beacon", "Sky Smoke", "Orbital Strike"],
+    "role": {
+      "id": "ROLE-002",
+      "name": "Controller",
+      "playstyle": "tactical",
+      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/controller.png"
+    }
+  },
+  {
+    "id": 107,
+    "name": "Killjoy",
+    "description": "Killjoy locks down areas using gadgets, turrets, and traps.",
+    "age": 22,
+    "origin": "Germany",
+    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/killjoy.png",
+    "difficulty": "medium",
+    "abilities": ["Alarmbot", "Nanoswarm", "Turret", "Lockdown"],
+    "role": {
+      "id": "ROLE-004",
+      "name": "Sentinel",
+      "playstyle": "defensive",
+      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/sentinel.png"
+    }
+  },
+  {
+    "id": 108,
+    "name": "Reyna",
+    "description": "Reyna thrives in one-on-one combat and snowballs from kills.",
+    "age": 25,
+    "origin": "Mexico",
+    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/reyna.png",
+    "difficulty": "hard",
+    "abilities": ["Leer", "Devour", "Dismiss", "Empress"],
+    "role": {
+      "id": "ROLE-001",
+      "name": "Duelist",
+      "playstyle": "offensive",
+      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/duelist.png"
+    }
+  },
+  {
+    "id": 109,
+    "name": "Breach",
+    "description": "Breach clears paths with powerful crowd-control abilities.",
+    "age": 32,
+    "origin": "Sweden",
+    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/breach.png",
+    "difficulty": "medium",
+    "abilities": ["Flashpoint", "Fault Line", "Aftershock", "Rolling Thunder"],
+    "role": {
+      "id": "ROLE-003",
+      "name": "Initiator",
+      "playstyle": "support",
+      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/initiator.png"
+    }
+  },
+  {
+    "id": 110,
+    "name": "Cypher",
+    "description": "Cypher gathers information and controls flanks with surveillance tools.",
+    "age": 33,
+    "origin": "Morocco",
+    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/cypher.png",
+    "difficulty": "medium",
+    "abilities": ["Trapwire", "Cyber Cage", "Spycam", "Neural Theft"],
+    "role": {
+      "id": "ROLE-004",
+      "name": "Sentinel",
+      "playstyle": "defensive",
+      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/sentinel.png"
+    }
+  },
+  {
+    "id": 111,
+    "name": "Raze",
+    "description": "Raze uses explosives to clear areas and deal massive damage.",
+    "age": 24,
+    "origin": "Brazil",
+    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/raze.png",
+    "difficulty": "medium",
+    "abilities": ["Boom Bot", "Blast Pack", "Paint Shells", "Showstopper"],
+    "role": {
+      "id": "ROLE-001",
+      "name": "Duelist",
+      "playstyle": "offensive",
+      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/duelist.png"
+      }
+  },
+  {
+    "id": 112,
+    "name": "Clove",
+    "description": "Clove manipulates life and death, continuing to influence the round even after being eliminated.",
+    "age": 21,
+    "origin": "Scotland",
+    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/clove.png",
+    "difficulty": "hard",
+    "abilities": ["Meddle", "Ruse", "Pick-Me-Up", "Not Dead Yet"],
+    "role": {
+      "id": "ROLE-002",
+      "name": "Controller",
+      "playstyle": "tactical",
+      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/controller.png"
+    }
+  },
+  {
+    "id": 113,
+    "name": "Neon",
+    "description": "Neon sprints across the battlefield using incredible speed and electric abilities.",
+    "age": 19,
+    "origin": "Philippines",
+    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/neon.png",
+    "difficulty": "hard",
+    "abilities": ["Fast Lane", "Relay Bolt", "High Gear", "Overdrive"],
+    "role": {
+      "id": "ROLE-001",
+      "name": "Duelist",
+      "playstyle": "offensive",
+      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/duelist.png"
+    }
+  },
+  {
+    "id": 114,
+    "name": "Chamber",
+    "description": "Chamber uses precision weapons and teleportation to control key positions.",
+    "age": 35,
+    "origin": "France",
+    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/chamber.png",
+    "difficulty": "hard",
+    "abilities": ["Trademark", "Headhunter", "Rendezvous", "Tour de Force"],
+    "role": {
+      "id": "ROLE-004",
+      "name": "Sentinel",
+      "playstyle": "defensive",
+      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/sentinel.png"
+    }
+  },
+  {
+    "id": 115,
+    "name": "Skye",
+    "description": "Skye supports her team by healing allies and scouting enemies with animals.",
+    "age": 27,
+    "origin": "Australia",
+    "imageUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/agents/skye.png",
+    "difficulty": "medium",
+    "abilities": ["Regrowth", "Trailblazer", "Guiding Light", "Seekers"],
+    "role": {
+      "id": "ROLE-003",
+      "name": "Initiator",
+      "playstyle": "support",
+      "iconUrl": "https://raw.githubusercontent.com/yourusername/yourrepo/main/images/roles/initiator.png"
+    }
+  }
+]
