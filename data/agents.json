@@ -8,6 +8,7 @@
     "isHuman": true,
     "releaseDate": "07-04-2020",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Brimstone_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Brimstone_Full.png",
     "difficulty": "easy",
     "abilities": ["Incendiary", "Stim Beacon", "Sky Smoke", "Orbital Strike"],
     "role": {
@@ -26,6 +27,7 @@
     "isHuman": true,
     "releaseDate": "07-04-2020",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Viper_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Viper_Full.png",
     "difficulty": "hard",
     "abilities": ["Snake Bite", "Poison Cloud", "Toxic Screen", "Viper's Pit"],
     "role": {
@@ -44,6 +46,7 @@
     "isHuman": true,
     "releaseDate": "07-04-2020",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Omen_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Omen_Full.png",
     "difficulty": "medium",
     "abilities": ["Dark Cover", "Shrouded Step", "Paranoia", "From the Shadows"],
     "role": {
@@ -62,6 +65,7 @@
     "isHuman": true,
     "releaseDate": "04-08-2020",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Killjoy_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Killjoy_Full.png",
     "difficulty": "medium",
     "abilities": ["Alarmbot", "Nanoswarm", "Turret", "Lockdown"],
     "role": {
@@ -80,6 +84,7 @@
     "isHuman": true,
     "releaseDate": "07-04-2020",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Cypher_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Cypher_Full.png",
     "difficulty": "medium",
     "abilities": ["Trapwire", "Cyber Cage", "Spycam", "Neural Theft"],
     "role": {
@@ -98,6 +103,7 @@
     "isHuman": true,
     "releaseDate": "07-04-2020",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Sova_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Sova_Full.png",
     "difficulty": "medium",
     "abilities": ["Recon Bolt", "Shock Bolt", "Owl Drone", "Hunter's Fury"],
     "role": {
@@ -116,6 +122,7 @@
     "isHuman": false,
     "releaseDate": "07-04-2020",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Sage_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Sage_Full.png",
     "difficulty": "easy",
     "abilities": ["Slow Orb", "Healing Orb", "Barrier Orb", "Resurrection"],
     "role": {
@@ -134,6 +141,7 @@
     "isHuman": false,
     "releaseDate": "07-04-2020",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Phoenix_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Phoenix_Full.png",
     "difficulty": "easy",
     "abilities": ["Curveball", "Hot Hands", "Blaze", "Run It Back"],
     "role": {
@@ -152,6 +160,7 @@
     "isHuman": false,
     "releaseDate": "07-04-2020",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Jett_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Jett_Full.png",
     "difficulty": "easy",
     "abilities": ["Dash", "Updraft", "Cloudburst", "Blade Storm"],
     "role": {
@@ -170,6 +179,7 @@
     "isHuman": false,
     "releaseDate": "02-06-2020",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Reyna_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Reyna_Full.png",
     "difficulty": "hard",
     "abilities": ["Leer", "Devour", "Dismiss", "Empress"],
     "role": {
@@ -188,6 +198,7 @@
     "isHuman": true,
     "releaseDate": "07-04-2020",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Raze_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Raze_Full.png",
     "difficulty": "medium",
     "abilities": ["Boom Bot", "Blast Pack", "Paint Shells", "Showstopper"],
     "role": {
@@ -206,6 +217,7 @@
     "isHuman": true,
     "releaseDate": "07-04-2020",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Breach_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Breach_Full.png",
     "difficulty": "medium",
     "abilities": ["Flashpoint", "Fault Line", "Aftershock", "Rolling Thunder"],
     "role": {
@@ -224,6 +236,7 @@
     "isHuman": false,
     "releaseDate": "27-10-2020",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Skye_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Skye_Full.png",
     "difficulty": "medium",
     "abilities": ["Regrowth", "Trailblazer", "Guiding Light", "Seekers"],
     "role": {
@@ -242,6 +255,7 @@
     "isHuman": false,
     "releaseDate": "12-01-2021",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Yoru_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Yoru_Full.png",
     "difficulty": "hard",
     "abilities": ["Fakeout", "Gatecrash", "Blindside", "Dimensional Drift"],
     "role": {
@@ -260,6 +274,7 @@
     "isHuman": false,
     "releaseDate": "02-03-2021",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Astra_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Astra_Full.png",
     "difficulty": "hard",
     "abilities": ["Gravity Well", "Nova Pulse", "Nebula / Dissipate", "Astral Form / Cosmic Divide"],
     "role": {
@@ -278,6 +293,7 @@
     "isHuman": false,
     "releaseDate": "22-06-2021",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/KAYO_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/KAYO_Full.png",
     "difficulty": "medium",
     "abilities": ["FRAG/ment", "FLASH/drive", "ZERO/point", "NULL/cmd"],
     "role": {
@@ -296,6 +312,7 @@
     "isHuman": true,
     "releaseDate": "16-11-2021",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Chamber_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Chamber_Full.png",
     "difficulty": "hard",
     "abilities": ["Trademark", "Headhunter", "Rendezvous", "Tour de Force"],
     "role": {
@@ -314,6 +331,7 @@
     "isHuman": false,
     "releaseDate": "11-01-2022",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Neon_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Neon_Full.png",
     "difficulty": "hard",
     "abilities": ["Fast Lane", "Relay Bolt", "High Gear", "Overdrive"],
     "role": {
@@ -332,6 +350,7 @@
     "isHuman": false,
     "releaseDate": "27-04-2022",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Fade_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Fade_Full.png",
     "difficulty": "medium",
     "abilities": ["Prowler", "Seize", "Haunt", "Nightfall"],
     "role": {
@@ -350,6 +369,7 @@
     "isHuman": true,
     "releaseDate": "18-10-2022",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Harbor_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Harbor_Full.png",
     "difficulty": "medium",
     "abilities": ["Cascade", "Cove", "High Tide", "Reckoning"],
     "role": {
@@ -368,6 +388,7 @@
     "isHuman": true,
     "releaseDate": "07-03-2023",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Gekko_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Gekko_Full.png",
     "difficulty": "medium",
     "abilities": ["Mosh Pit", "Wingman", "Dizzy", "Thrash"],
     "role": {
@@ -386,6 +407,7 @@
     "isHuman": true,
     "releaseDate": "27-06-2023",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Deadlock_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Deadlock_Full.png",
     "difficulty": "medium",
     "abilities": ["Sonic Sensor", "Barrier Mesh", "GravNet", "Annihilation"],
     "role": {
@@ -404,6 +426,7 @@
     "isHuman": false,
     "releaseDate": "31-10-2023",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Iso_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Iso_Full.png",
     "difficulty": "medium",
     "abilities": ["Contingency", "Undercut", "Double Tap", "Kill Contract"],
     "role": {
@@ -422,6 +445,7 @@
     "isHuman": false,
     "releaseDate": "26-03-2024",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Clove_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Clove_Full.png",
     "difficulty": "hard",
     "abilities": ["Meddle", "Ruse", "Pick-Me-Up", "Not Dead Yet"],
     "role": {
@@ -440,6 +464,7 @@
     "isHuman": false,
     "releaseDate": "28-08-2024",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Vyse_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Vyse_Full.png",
     "difficulty": "medium",
     "abilities": ["Shear", "Arc Rose", "Razorvine", "Steel Garden"],
     "role": {
@@ -458,6 +483,7 @@
     "isHuman": true,
     "releaseDate": "08-01-2025",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Tejo_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Tejo_Full.png",
     "difficulty": "medium",
     "abilities": ["Special Delivery", "Stealth Drone", "Guided Salvo", "Armageddon"],
     "role": {
@@ -476,6 +502,7 @@
     "isHuman": false,
     "releaseDate": "05-03-2025",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Waylay_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Waylay_Full.png",
     "difficulty": "hard",
     "abilities": ["Saturate", "Light Speed", "Refract", "Convergent Paths"],
     "role": {
@@ -494,6 +521,7 @@
     "isHuman": false,
     "releaseDate": "07-10-2025",
     "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Veto_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Veto_Full.png",
     "difficulty": "medium",
     "abilities": ["Crosscut", "Chokehold", "Interceptor", "Evolution"],
     "role": {
