@@ -4,7 +4,7 @@
     "name": "Duelist",
     "description": "Aggressive agents who focus on eliminations and opening up sites.",
     "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/DuelistClassSymbol.png",
-    "playstyle": "offensive",
+    "playstyle": "Offensive",
     "recommendedForBeginners": true,
     "primaryResponsibility": "Securing kills and taking first engagements"
   },
@@ -13,7 +13,7 @@
     "name": "Controller",
     "description": "Agents who control the battlefield using smokes and vision denial.",
     "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/ControllerClassSymbol.png",
-    "playstyle": "tactical",
+    "playstyle": "Tactical",
     "recommendedForBeginners": false,
     "primaryResponsibility": "Blocking sightlines and supporting the team"
   },
@@ -22,7 +22,7 @@
     "name": "Initiator",
     "description": "Agents who start engagements by gathering information and disrupting enemies.",
     "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/InitiatorClassSymbol.png",
-    "playstyle": "support",
+    "playstyle": "Support",
     "recommendedForBeginners": false,
     "primaryResponsibility": "Providing information and enabling team fights"
   },
@@ -31,7 +31,7 @@
     "name": "Sentinel",
     "description": "Defensive agents who specialize in locking down sites and watching flanks.",
     "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/SentinelClassSymbol.png",
-    "playstyle": "defensive",
+    "playstyle": "Defensive",
     "recommendedForBeginners": true,
     "primaryResponsibility": "Defending objectives and slowing enemy pushes"
   }
