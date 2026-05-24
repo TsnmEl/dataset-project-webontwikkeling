@@ -17,7 +17,7 @@ app.use(express.static('public'));
 app.use(express.urlencoded({ extended: true }));
 app.set('view engine', 'ejs');
 app.set('views', path.resolve('views'));
-app.set('port', 3000);
+app.set('port', process.env.PORT || 3000);
 
 app.use(session({
     secret: 'valorant-secret-key-change-in-prod',

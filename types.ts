@@ -1,3 +1,5 @@
+import { ObjectId } from 'mongodb';
+
 export interface Agent {
   id: string;
   agentNumber: number;

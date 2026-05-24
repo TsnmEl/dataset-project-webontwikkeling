@@ -7,7 +7,7 @@ import { MongoClient, ObjectId } from "mongodb";
 const AGENTS_URL = 'https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/refs/heads/main/public/data/agents.json';
 const ROLES_URL = 'https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/refs/heads/main/public/data/roles.json';
 
-const uri = 'mongodb+srv://apuser:8ufZNNX4MFvZcYsq@ap-cluster.da11kni.mongodb.net/?appName=ap-cluster';
+const uri = process.env.MONGO_URI ?? '';
 const client = new MongoClient(uri);
 
 export async function loadDatabase() {
