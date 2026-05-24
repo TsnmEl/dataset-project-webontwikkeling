@@ -7,8 +7,8 @@
     "origin": "United States",
     "race": "Human",
     "releaseDate": "2020-04-07",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Brimstone_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Brimstone_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Brimstone_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Brimstone_Full.png",
     "difficulty": "Easy",
     "beginnerFriendly": true,
     "abilities": ["Incendiary", "Stim Beacon", "Sky Smoke", "Orbital Strike"],
@@ -16,7 +16,7 @@
       "id": "ROLE-002",
       "name": "Controller",
       "playstyle": "Tactical",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/ControllerClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/ControllerClassSymbol.png"
     }
   },
   {
@@ -27,8 +27,8 @@
     "origin": "United States",
     "race": "Human",
     "releaseDate": "2020-04-07",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Viper_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Viper_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Viper_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Viper_Full.png",
     "difficulty": "Hard",
     "beginnerFriendly": false,
     "abilities": ["Snake Bite", "Poison Cloud", "Toxic Screen", "Viper's Pit"],
@@ -36,7 +36,7 @@
       "id": "ROLE-002",
       "name": "Controller",
       "playstyle": "Tactical",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/ControllerClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/ControllerClassSymbol.png"
     }
   },
   {
@@ -47,8 +47,8 @@
     "origin": "Unknown",
     "race": "Radiant",
     "releaseDate": "2020-04-07",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Omen_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Omen_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Omen_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Omen_Full.png",
     "difficulty": "Medium",
     "beginnerFriendly": true,
     "abilities": ["Dark Cover", "Shrouded Step", "Paranoia", "From the Shadows"],
@@ -56,7 +56,7 @@
       "id": "ROLE-002",
       "name": "Controller",
       "playstyle": "Tactical",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/ControllerClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/ControllerClassSymbol.png"
     }
   },
   {
@@ -67,8 +67,8 @@
     "origin": "Germany",
     "race": "Human",
     "releaseDate": "2020-08-04",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Killjoy_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Killjoy_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Killjoy_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Killjoy_Full.png",
     "difficulty": "Medium",
     "beginnerFriendly": true,
     "abilities": ["Alarmbot", "Nanoswarm", "Turret", "Lockdown"],
@@ -76,7 +76,7 @@
       "id": "ROLE-004",
       "name": "Sentinel",
       "playstyle": "Defensive",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/SentinelClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/SentinelClassSymbol.png"
     }
   },
   {
@@ -87,8 +87,8 @@
     "origin": "Morocco",
     "race": "Human",
     "releaseDate": "2020-04-07",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Cypher_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Cypher_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Cypher_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Cypher_Full.png",
     "difficulty": "Medium",
     "beginnerFriendly": false,
     "abilities": ["Trapwire", "Cyber Cage", "Spycam", "Neural Theft"],
@@ -96,7 +96,7 @@
       "id": "ROLE-004",
       "name": "Sentinel",
       "playstyle": "Defensive",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/SentinelClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/SentinelClassSymbol.png"
     }
   },
   {
@@ -107,8 +107,8 @@
     "origin": "Russia",
     "race": "Human",
     "releaseDate": "2020-04-07",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Sova_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Sova_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Sova_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Sova_Full.png",
     "difficulty": "Medium",
     "beginnerFriendly": false,
     "abilities": ["Recon Bolt", "Shock Bolt", "Owl Drone", "Hunter's Fury"],
@@ -127,8 +127,8 @@
     "origin": "China",
     "race": "Radiant",
     "releaseDate": "2020-04-07",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Sage_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Sage_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Sage_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Sage_Full.png",
     "difficulty": "Easy",
     "beginnerFriendly": true,
     "abilities": ["Slow Orb", "Healing Orb", "Barrier Orb", "Resurrection"],
@@ -136,7 +136,7 @@
       "id": "ROLE-004",
       "name": "Sentinel",
       "playstyle": "Defensive",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/SentinelClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/SentinelClassSymbol.png"
     }
   },
   {
@@ -147,8 +147,8 @@
     "origin": "England",
     "race": "Radiant",
     "releaseDate": "2020-04-07",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Phoenix_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Phoenix_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Phoenix_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Phoenix_Full.png",
     "difficulty": "Easy",
     "beginnerFriendly": true,
     "abilities": ["Curveball", "Hot Hands", "Blaze", "Run It Back"],
@@ -156,7 +156,7 @@
       "id": "ROLE-001",
       "name": "Duelist",
       "playstyle": "Offensive",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/DuelistClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/DuelistClassSymbol.png"
     }
   },
   {
@@ -167,8 +167,8 @@
     "origin": "South Korea",
     "race": "Radiant",
     "releaseDate": "2020-04-07",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Jett_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Jett_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Jett_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Jett_Full.png",
     "difficulty": "Easy",
     "beginnerFriendly": true,
     "abilities": ["Tailwind", "Updraft", "Cloudburst", "Blade Storm"],
@@ -176,7 +176,7 @@
       "id": "ROLE-001",
       "name": "Duelist",
       "playstyle": "Offensive",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/DuelistClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/DuelistClassSymbol.png"
     }
   },
   {
@@ -187,8 +187,8 @@
     "origin": "Mexico",
     "race": "Radiant",
     "releaseDate": "2020-06-02",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Reyna_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Reyna_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Reyna_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Reyna_Full.png",
     "difficulty": "Hard",
     "beginnerFriendly": true,
     "abilities": ["Leer", "Devour", "Dismiss", "Empress"],
@@ -196,7 +196,7 @@
       "id": "ROLE-001",
       "name": "Duelist",
       "playstyle": "Offensive",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/DuelistClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/DuelistClassSymbol.png"
     }
   },
   {
@@ -207,8 +207,8 @@
     "origin": "Brazil",
     "race": "Human",
     "releaseDate": "2020-04-07",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Raze_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Raze_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Raze_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Raze_Full.png",
     "difficulty": "Medium",
     "beginnerFriendly": false,
     "abilities": ["Boom Bot", "Blast Pack", "Paint Shells", "Showstopper"],
@@ -216,7 +216,7 @@
       "id": "ROLE-001",
       "name": "Duelist",
       "playstyle": "Offensive",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/DuelistClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/DuelistClassSymbol.png"
     }
   },
   {
@@ -227,8 +227,8 @@
     "origin": "Sweden",
     "race": "Human",
     "releaseDate": "2020-04-07",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Breach_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Breach_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Breach_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Breach_Full.png",
     "difficulty": "Medium",
     "beginnerFriendly": false,
     "abilities": ["Flashpoint", "Fault Line", "Aftershock", "Rolling Thunder"],
@@ -236,7 +236,7 @@
       "id": "ROLE-003",
       "name": "Initiator",
       "playstyle": "Support",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/InitiatorClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/InitiatorClassSymbol.png"
     }
   },
   {
@@ -247,8 +247,8 @@
     "origin": "Australia",
     "race": "Radiant",
     "releaseDate": "2020-10-27",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Skye_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Skye_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Skye_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Skye_Full.png",
     "difficulty": "Medium",
     "beginnerFriendly": true,
     "abilities": ["Regrowth", "Trailblazer", "Guiding Light", "Seekers"],
@@ -256,7 +256,7 @@
       "id": "ROLE-003",
       "name": "Initiator",
       "playstyle": "Support",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/InitiatorClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/InitiatorClassSymbol.png"
     }
   },
   {
@@ -267,8 +267,8 @@
     "origin": "Japan",
     "race": "Radiant",
     "releaseDate": "2021-01-12",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Yoru_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Yoru_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Yoru_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Yoru_Full.png",
     "difficulty": "Hard",
     "beginnerFriendly": false,
     "abilities": ["Fakeout", "Gatecrash", "Blindside", "Dimensional Drift"],
@@ -276,7 +276,7 @@
       "id": "ROLE-001",
       "name": "Duelist",
       "playstyle": "Offensive",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/DuelistClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/DuelistClassSymbol.png"
     }
   },
   {
@@ -287,8 +287,8 @@
     "origin": "Ghana",
     "race": "Radiant",
     "releaseDate": "2021-03-02",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Astra_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Astra_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Astra_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Astra_Full.png",
     "difficulty": "Hard",
     "beginnerFriendly": false,
     "abilities": ["Gravity Well", "Nova Pulse", "Nebula", "Astral Form / Cosmic Divide"],
@@ -296,7 +296,7 @@
       "id": "ROLE-002",
       "name": "Controller",
       "playstyle": "Tactical",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/ControllerClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/ControllerClassSymbol.png"
     }
   },
   {
@@ -307,8 +307,8 @@
     "origin": "Alternate Timeline Earth",
     "race": "Cybernetic",
     "releaseDate": "2021-06-22",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/KAYO_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/KAYO_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/KAYO_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/KAYO_Full.png",
     "difficulty": "Medium",
     "beginnerFriendly": false,
     "abilities": ["FRAG/ment", "FLASH/drive", "ZERO/point", "NULL/cmd"],
@@ -316,7 +316,7 @@
       "id": "ROLE-003",
       "name": "Initiator",
       "playstyle": "Support",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/InitiatorClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/InitiatorClassSymbol.png"
     }
   },
   {
@@ -327,8 +327,8 @@
     "origin": "France",
     "race": "Human",
     "releaseDate": "2021-11-16",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Chamber_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Chamber_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Chamber_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Chamber_Full.png",
     "difficulty": "Hard",
     "beginnerFriendly": false,
     "abilities": ["Trademark", "Headhunter", "Rendezvous", "Tour de Force"],
@@ -336,7 +336,7 @@
       "id": "ROLE-004",
       "name": "Sentinel",
       "playstyle": "Defensive",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/SentinelClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/SentinelClassSymbol.png"
     }
   },
   {
@@ -347,8 +347,8 @@
     "origin": "Philippines",
     "race": "Radiant",
     "releaseDate": "2022-01-11",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Neon_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Neon_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Neon_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Neon_Full.png",
     "difficulty": "Hard",
     "beginnerFriendly": false,
     "abilities": ["Fast Lane", "Relay Bolt", "High Gear", "Overdrive"],
@@ -356,7 +356,7 @@
       "id": "ROLE-001",
       "name": "Duelist",
       "playstyle": "Offensive",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/DuelistClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/DuelistClassSymbol.png"
     }
   },
   {
@@ -367,8 +367,8 @@
     "origin": "Turkey",
     "race": "Radiant",
     "releaseDate": "2022-04-27",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Fade_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Fade_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Fade_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Fade_Full.png",
     "difficulty": "Medium",
     "beginnerFriendly": false,
     "abilities": ["Prowler", "Seize", "Haunt", "Nightfall"],
@@ -376,7 +376,7 @@
       "id": "ROLE-003",
       "name": "Initiator",
       "playstyle": "Support",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/InitiatorClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/InitiatorClassSymbol.png"
     }
   },
   {
@@ -387,8 +387,8 @@
     "origin": "India",
     "race": "Human",
     "releaseDate": "2022-10-18",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Harbor_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Harbor_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Harbor_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Harbor_Full.png",
     "difficulty": "Medium",
     "beginnerFriendly": false,
     "abilities": ["Storm Surge", "Cove", "High Tide", "Reckoning"],
@@ -396,7 +396,7 @@
       "id": "ROLE-002",
       "name": "Controller",
       "playstyle": "Tactical",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/ControllerClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/ControllerClassSymbol.png"
     }
   },
   {
@@ -407,8 +407,8 @@
     "origin": "United States",
     "race": "Human",
     "releaseDate": "2023-03-07",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Gekko_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Gekko_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Gekko_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Gekko_Full.png",
     "difficulty": "Medium",
     "beginnerFriendly": true,
     "abilities": ["Mosh Pit", "Wingman", "Dizzy", "Thrash"],
@@ -416,7 +416,7 @@
       "id": "ROLE-003",
       "name": "Initiator",
       "playstyle": "Support",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/InitiatorClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/InitiatorClassSymbol.png"
     }
   },
   {
@@ -427,8 +427,8 @@
     "origin": "Norway",
     "race": "Human",
     "releaseDate": "2023-06-27",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Deadlock_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Deadlock_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Deadlock_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Deadlock_Full.png",
     "difficulty": "Medium",
     "beginnerFriendly": true,
     "abilities": ["Sonic Sensor", "Barrier Mesh", "GravNet", "Annihilation"],
@@ -436,7 +436,7 @@
       "id": "ROLE-004",
       "name": "Sentinel",
       "playstyle": "Defensive",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/SentinelClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/SentinelClassSymbol.png"
     }
   },
   {
@@ -447,8 +447,8 @@
     "origin": "China",
     "race": "Radiant",
     "releaseDate": "2023-10-31",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Iso_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Iso_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Iso_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Iso_Full.png",
     "difficulty": "Medium",
     "beginnerFriendly": true,
     "abilities": ["Contingency", "Undercut", "Double Tap", "Kill Contract"],
@@ -456,7 +456,7 @@
       "id": "ROLE-001",
       "name": "Duelist",
       "playstyle": "Offensive",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/DuelistClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/DuelistClassSymbol.png"
     }
   },
   {
@@ -467,8 +467,8 @@
     "origin": "Scotland",
     "race": "Radiant",
     "releaseDate": "2024-03-26",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Clove_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Clove_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Clove_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Clove_Full.png",
     "difficulty": "Hard",
     "beginnerFriendly": true,
     "abilities": ["Meddle", "Ruse", "Pick-Me-Up", "Not Dead Yet"],
@@ -476,7 +476,7 @@
       "id": "ROLE-002",
       "name": "Controller",
       "playstyle": "Tactical",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/ControllerClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/ControllerClassSymbol.png"
     }
   },
   {
@@ -487,8 +487,8 @@
     "origin": "Unknown",
     "race": "Radiant",
     "releaseDate": "2024-08-28",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Vyse_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Vyse_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Vyse_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Vyse_Full.png",
     "difficulty": "Medium",
     "beginnerFriendly": true,
     "abilities": ["Shear", "Arc Rose", "Razorvine", "Steel Garden"],
@@ -496,7 +496,7 @@
       "id": "ROLE-004",
       "name": "Sentinel",
       "playstyle": "Defensive",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/SentinelClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/SentinelClassSymbol.png"
     }
   },
   {
@@ -507,8 +507,8 @@
     "origin": "Colombia",
     "race": "Human",
     "releaseDate": "2025-01-08",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Tejo_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Tejo_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Tejo_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Tejo_Full.png",
     "difficulty": "Medium",
     "beginnerFriendly": true,
     "abilities": ["Special Delivery", "Stealth Drone", "Guided Salvo", "Armageddon"],
@@ -516,7 +516,7 @@
       "id": "ROLE-003",
       "name": "Initiator",
       "playstyle": "Support",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/InitiatorClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/InitiatorClassSymbol.png"
     }
   },
   {
@@ -527,8 +527,8 @@
     "origin": "Thailand",
     "race": "Radiant",
     "releaseDate": "2025-03-05",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Waylay_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Waylay_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Waylay_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Waylay_Full.png",
     "difficulty": "Hard",
     "beginnerFriendly": true,
     "abilities": ["Saturate", "Light Speed", "Refract", "Convergent Paths"],
@@ -536,7 +536,7 @@
       "id": "ROLE-001",
       "name": "Duelist",
       "playstyle": "Offensive",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/DuelistClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/DuelistClassSymbol.png"
     }
   },
   {
@@ -547,8 +547,8 @@
     "origin": "Senegal",
     "race": "Radiant",
     "releaseDate": "2025-10-07",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Veto_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Veto_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Veto_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Veto_Full.png",
     "difficulty": "Medium",
     "beginnerFriendly": true,
     "abilities": ["Crosscut", "Chokehold", "Interceptor", "Evolution"],
@@ -556,7 +556,7 @@
       "id": "ROLE-004",
       "name": "Sentinel",
       "playstyle": "Defensive",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/SentinelClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/SentinelClassSymbol.png"
     }
   },
   {
@@ -567,8 +567,8 @@
     "origin": "Croatia",
     "race": "Radiant",
     "releaseDate": "2026-03-18",
-    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Miks_icon.png",
-    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/agents/Miks_Full.png",
+    "imageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Miks_icon.png",
+    "fullImageUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/agents/Miks_Full.png",
     "difficulty": "Medium",
     "beginnerFriendly": false,
     "abilities": ["M-pulse", "Harmonize", "Waveform", "Bassquake"],
@@ -576,7 +576,7 @@
       "id": "ROLE-002",
       "name": "Controller",
       "playstyle": "Tactical",
-      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/assets/roles/ControllerClassSymbol.png"
+      "iconUrl": "https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/main/public/assets/roles/ControllerClassSymbol.png"
     }
   }
 ]

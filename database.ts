@@ -3,8 +3,8 @@ import bcrypt from 'bcrypt';
 import { Agent, Role, RoleCounts, User } from './types';
 
 const MONGO_URI = 'mongodb+srv://apuser:8ufZNNX4MFvZcYsq@ap-cluster.da11kni.mongodb.net/?appName=ap-cluster';
-const AGENTS_URL = 'https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/refs/heads/main/data/agents.json';
-const ROLES_URL = 'https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/refs/heads/main/data/roles.json';
+const AGENTS_URL = 'https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/refs/heads/main/public/data/agents.json';
+const ROLES_URL = 'https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/refs/heads/main/public/data/roles.json';
 const SALT_ROUNDS = 10;
 
 export const client = new MongoClient(MONGO_URI);
@@ -50,7 +50,7 @@ async function seed(): Promise<void> {
 async function exit() {
     try {
         await client.close();
-        console.log('[db] Verbinding verbroken [✓]');
+        console.log('[db] Verbinding verbroken.');
     } catch (error) {
         console.error(error);
     }

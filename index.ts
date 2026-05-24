@@ -52,7 +52,7 @@ const requireAdmin = (req: Request, res: Response, next: NextFunction): void => 
 
 app.get('/', (_req, res) => res.redirect('/home'));
 
-// LOGIN
+/* LOGIN */
 app.get('/login', requireGuest, (_req, res) => {
     res.render('login', { error: null });
 });
@@ -64,15 +64,14 @@ app.post('/login', requireGuest, async (req, res) => {
         if (!user) {
             return res.render('login', { error: 'Ongeldige gebruikersnaam of wachtwoord.' });
         }
-        const match = await bcrypt.compare(password, user.password);
-        if (!match) {
+        const passwordMatch = await bcrypt.compare(password, user.password);
+        if (!passwordMatch) {
             return res.render('login', { error: 'Ongeldige gebruikersnaam of wachtwoord.' });
         }
         req.session.user = { username: user.username, role: user.role };
-        res.redirect('/home');
+        res.redirect('/home?welcome=1');
     } catch (err) {
         console.error(err);
-        res.status(500).send('Server error bij inloggen');
     }
 });
 
@@ -95,11 +94,10 @@ app.post('/register', requireGuest, async (req, res) => {
         res.redirect('/login');
     } catch (err) {
         console.error(err);
-        res.status(500).send('Server error bij registreren');
     }
 });
 
-// HOME
+/* HOME */
 app.get('/home', requireLogin, async (req, res) => {
     try {
         let agents = await getAgents();
@@ -107,7 +105,7 @@ app.get('/home', requireLogin, async (req, res) => {
         const roleCounts = await getRoleCounts();
 
         const search = (req.query.search as string) ?? '';
-        const roleF= (req.query.role as string) ?? 'all';
+        const roleFilter = (req.query.role as string) ?? 'all';
         const sortKey = (req.query.sort   as string) ?? 'name';
         const sortDir = req.query.dir === 'desc' ? -1 : 1;
 
@@ -125,11 +123,10 @@ app.get('/home', requireLogin, async (req, res) => {
         res.render('index', { agents, roles, roleCounts, search, roleFilter, sortKey, sortDir, roleClass, roleColor, currentUser: req.session.user });
     } catch (err) {
         console.error(err);
-        res.status(500).send('Server error');
     }
 });
 
-// AGENTS
+/* AGENTS */
 app.get('/agents', requireLogin, async (req, res) => {
     try {
         let agents = await getAgents();
@@ -139,11 +136,10 @@ app.get('/agents', requireLogin, async (req, res) => {
         res.render('agents', { agents, search, roleClass, roleColor, currentUser: req.session.user });
     } catch (err) {
         console.error(err);
-        res.status(500).send('Server error');
     }
 });
 
-// AGENT DETAIL
+/* AGENT DETAIL */
 app.get('/agents/:id', requireLogin, async (req, res) => {
     try {
         const agents  = await getAgents();
@@ -153,11 +149,10 @@ app.get('/agents/:id', requireLogin, async (req, res) => {
         res.render('agent-detail', { agent, roleClass, roleColor, abilityVideos: AbilityVideos, currentUser: req.session.user });
     } catch (err) {
         console.error(err);
-        res.status(500).send('Server error');
     }
 });
 
-// AGENT EDIT
+/* AGENT EDIT */
 app.post('/agents/:id/edit', requireAdmin, async (req, res) => {
     try {
         const { description, origin, difficulty, beginnerFriendly, roleName } = req.body;
@@ -171,11 +166,10 @@ app.post('/agents/:id/edit', requireAdmin, async (req, res) => {
         res.redirect('/agents/' + req.params.id);
     } catch (err) {
         console.error(err);
-        res.status(500).send('Server error bij opslaan');
     }
 });
 
-// ROLES
+/* ROLES */
 app.get('/roles', requireLogin, async (req, res) => {
     try {
         const roles      = await getRoles();
@@ -183,11 +177,10 @@ app.get('/roles', requireLogin, async (req, res) => {
         res.render('roles', { roles, roleCounts, roleClass, roleColor, currentUser: req.session.user });
     } catch (err) {
         console.error(err);
-        res.status(500).send('Server error');
     }
 });
 
-// ROLE DETAIL
+/* ROLE DETAIL */
 app.get('/roles/:name', requireLogin, async (req, res) => {
     try {
         const roles     = await getRoles();
@@ -199,34 +192,30 @@ app.get('/roles/:name', requireLogin, async (req, res) => {
         res.render('role-detail', { role, roleAgents, roleClass, roleColor, currentUser: req.session.user });
     } catch (err) {
         console.error(err);
-        res.status(500).send('Server error');
     }
 });
 
-// USERS
+/* USERS */
 app.get('/users', requireLogin, async (req, res) => {
     try {
         const allUsers = await getUsers();
         res.render('users', { allUsers, currentUser: req.session.user });
     } catch (err) {
         console.error(err);
-        res.status(500).send('Server error');
     }
 });
 
-// USER DELETE
+/* USER DELETE */
 app.post('/users/:id/delete', requireAdmin, async (req, res) => {
     try {
         await deleteUser(new ObjectId(req.params.id as string));
         res.redirect('/users');
     } catch (err) {
         console.error(err);
-        res.status(500).send('Server error bij verwijderen');
     }
 });
 
-// ── Boot ──────────────────────────────────────────────────────────────────────
-
+/* SERVER */
 app.listen(app.get('port'), async () => {
     await connect();
     console.log('[server] http://localhost:' + app.get('port'));

@@ -1242,15 +1242,72 @@ body::before {
   background: var(--red); 
 }
 
-.auth-body {
+.login-body {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   background: var(--dark);
 }
+
+.loading-overlay {
+  position: fixed;
+  inset: 0;
+  background: var(--dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99999;
+  transition: opacity 0.5s;
+}
+
+.loading-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.loading-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.loading-bar {
+  width: 200px;
+  height: 3px;
+  background: var(--dark-border);
+  position: relative;
+  overflow: hidden;
+}
+
+.loading-bar::after {
+  content: '';
+  position: absolute;
+  left: -40%;
+  width: 40%;
+  height: 100%;
+  background: var(--red);
+  animation: loading-slide 1s linear infinite;
+}
+
+.loading-text {
+  font-family: var(--font-body);
+  font-size: 11px;
+  letter-spacing: 4px;
+  color: var(--red);
+}
+
+@keyframes loading-slide {
+  to { left: 100%; }
+}
+
+.loading-agent {
+  width: 380px;
+  filter: drop-shadow(0 0 20px rgba(255, 70, 85, 0.4));
+}
  
-.auth-container {
+.login-container {
   position: relative;
   z-index: 10;
   display: flex;
@@ -1262,18 +1319,19 @@ body::before {
   padding: 24px;
 }
  
-.auth-logo {
+.login-logo {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 6px;
 }
  
-.auth-logo-img {
+.login-logo-img {
   width: 64px;
+  margin-right: 10px;
 }
  
-.auth-logo-text {
+.login-logo-text {
   font-family: var(--font-title);
   font-size: 40px;
   letter-spacing: 8px;
@@ -1281,14 +1339,14 @@ body::before {
   font-weight: 700;
 }
  
-.auth-logo-sub {
+.login-logo-sub {
   font-size: 9px;
   letter-spacing: 3px;
   color: var(--red);
   text-transform: uppercase;
 }
  
-.auth-card {
+.login-card {
   width: 100%;
   background: var(--dark-card);
   border: 1px solid var(--dark-border);
@@ -1296,14 +1354,14 @@ body::before {
   padding: 32px;
 }
  
-.auth-card-header {
+.login-card-header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   margin-bottom: 28px;
 }
  
-.auth-title {
+.login-title {
   font-family: var(--font-title);
   font-size: 32px;
   letter-spacing: 6px;
@@ -1311,14 +1369,14 @@ body::before {
   font-weight: 700;
 }
  
-.auth-corner {
+.login-corner {
   width: 20px;
   height: 20px;
   border-top: 2px solid var(--red);
   border-right: 2px solid var(--red);
 }
  
-.auth-error {
+.login-error {
   background: rgba(255, 70, 85, 0.1);
   border: 1px solid var(--red);
   color: var(--red);
@@ -1329,26 +1387,26 @@ body::before {
   clip-path: polygon(0 0, calc(100% - 6px) 0, 100% 6px, 100% 100%, 6px 100%, 0 calc(100% - 6px));
 }
  
-.auth-form {
+.login-form {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
  
-.auth-field {
+.login-field {
   display: flex;
   flex-direction: column;
   gap: 8px;
 }
  
-.auth-label {
+.login-label {
   font-size: 10px;
   letter-spacing: 3px;
   text-transform: uppercase;
   color: var(--off-white);
 }
  
-.auth-input {
+.login-input {
   background: var(--dark);
   border: 1px solid var(--dark-border);
   color: var(--white);
@@ -1362,15 +1420,15 @@ body::before {
   clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
 }
  
-.auth-input::placeholder {
+.login-input::placeholder {
   color: var(--off-white);
 }
  
-.auth-input:focus {
+.login-input:focus {
   border-color: var(--red);
 }
  
-.auth-btn {
+.login-btn {
   margin-top: 8px;
   padding: 14px;
   background: var(--red);
@@ -1386,12 +1444,12 @@ body::before {
   clip-path: polygon(0 0, calc(100% - 8px) 0, 100% 8px, 100% 100%, 8px 100%, 0 calc(100% - 8px));
 }
  
-.auth-btn:hover {
+.login-btn:hover {
   opacity: 0.85;
   transform: translateY(-1px);
 }
  
-.auth-footer {
+.login-footer {
   margin-top: 24px;
   text-align: center;
   font-size: 12px;
@@ -1399,13 +1457,13 @@ body::before {
   color: var(--off-white);
 }
  
-.auth-link {
+.login-link {
   color: var(--red);
   text-decoration: none;
   font-weight: 700;
 }
  
-.auth-link:hover {
+.login-link:hover {
   opacity: 0.8;
 }
  

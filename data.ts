@@ -4,8 +4,8 @@ import { Agent, Role, RoleCounts, AppData } from './types';
 import path from 'path';
 import { MongoClient, ObjectId } from "mongodb";
  
-const AGENTS_URL = 'https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/refs/heads/main/data/agents.json';
-const ROLES_URL = 'https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/refs/heads/main/data/roles.json';
+const AGENTS_URL = 'https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/refs/heads/main/public/data/agents.json';
+const ROLES_URL = 'https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/refs/heads/main/public/data/roles.json';
 
 const uri = 'mongodb+srv://apuser:8ufZNNX4MFvZcYsq@ap-cluster.da11kni.mongodb.net/?appName=ap-cluster';
 const client = new MongoClient(uri);
