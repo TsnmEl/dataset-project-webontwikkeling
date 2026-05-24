@@ -1,0 +1,48 @@
+<% const activePage = 'roles'; %>
+<%- include("partials/header") %>
+
+<section class="page-section active">
+  <div class="topbar">
+    <a href="/roles" class="action-link back-link">⇦ Back</a>
+  </div>
+
+  <div class="detail-layout role">
+
+    <div class="detail-role-box <%= roleClass(role.name) %>">
+      <img src="<%= role.iconUrl %>" alt="<%= role.name %>"
+           class="<%= roleClass(role.name) %>">
+      <div class="detail-role-title"><%= role.name.toUpperCase() %></div>
+    </div>
+
+    <div>
+      <div class="detail-desc wide"><%= role.description %></div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-box-label">Playstyle</div>
+          <div class="stat-box-value role-value <%= roleClass(role.name) %>"><%= role.playstyle %></div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-label">Agent Count</div>
+          <div class="stat-box-value role-value"><%= roleAgents.length %></div>
+        </div>
+        <div class="stat-box full">
+          <div class="stat-box-label">Primary Responsibility</div>
+          <div class="stat-box-value italic"><%= role.primaryResponsibility %></div>
+        </div>
+      </div>
+
+      <div class="detail-section-label mb12 <%= roleClass(role.name) %>">AGENTS IN THIS ROLE</div>
+      <div class="tags-row gap10">
+        <% roleAgents.forEach(function(agent) { %>
+          <a href="/agents/<%= agent.id %>"
+             class="ability-tag ability-clickable <%= roleClass(role.name) %>">
+            <%= agent.name %>
+          </a>
+        <% }); %>
+      </div>
+    </div>
+  </div>
+</section>
+
+<%- include("partials/footer") %>

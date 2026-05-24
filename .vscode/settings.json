@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "*.ejs": "html"
+  },
+  "js/ts.validate.enabled": false,
+  "css.validate.enabled": false,
+  "stylelint.enable": false,
+  "html.validate.scripts": false,
+  "html.validate.styles": false
+}

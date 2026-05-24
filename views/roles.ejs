@@ -1,0 +1,38 @@
+<% const activePage = 'roles'; %>
+<%- include("partials/header") %>
+
+<section class="page-section active">
+  <div class="topbar">
+    <div class="page-title">ROLES</div>
+  </div>
+
+  <div class="table-container">
+    <div class="table-header roles-grid">
+      <div class="col-label">ROLE</div>
+      <div class="col-label">PLAYSTYLE</div>
+      <div class="col-label">DESCRIPTION</div>
+      <div class="col-label">RESPONSIBILITY</div>
+    </div>
+
+    <% roles.forEach(function(role, i) { %>
+      <a href="/roles/<%= role.name %>" class="row-link">
+        <div class="agent-row roles-grid" style="animation-delay:<%= i * 0.08 %>s;">
+          <div class="agent-info">
+            <div class="agent-avatar role-avatar <%= roleClass(role.name) %>">
+              <img src="<%= role.iconUrl %>" alt="<%= role.name %>">
+            </div>
+            <div class="agent-name-wrap">
+              <div class="agent-name <%= roleClass(role.name) %>"><%= role.name %></div>
+              <div class="agent-role"><%= roleCounts[role.name] ?? 0 %> agents</div>
+            </div>
+          </div>
+          <div class="playstyle white"><%= role.playstyle %></div>
+          <div class="description"><%= role.description %></div>
+          <div class="responsability italic"><%= role.primaryResponsibility %></div>
+        </div>
+      </a>
+    <% }); %>
+  </div>
+</section>
+
+<%- include("partials/footer") %>

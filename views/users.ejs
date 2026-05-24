@@ -1,0 +1,48 @@
+<% const activePage = 'users'; %>
+<%- include("partials/header") %>
+
+<section class="page-section active">
+
+  <div class="topbar">
+    <div class="page-title">USERS</div>
+  </div>
+
+  <div class="table-container">
+    <div class="table-header users-grid">
+      <div class="col-label">USERNAME</div>
+      <div class="col-label">ROLE</div>
+      <div class="col-label"></div>
+    </div>
+
+    <div id="agents-list">
+      <% if (!allUsers || allUsers.length === 0) { %>
+        <div class="empty-state">Geen gebruikers gevonden.</div>
+      <% } %>
+
+      <% allUsers.forEach(function(u, i) { %>
+        <div class="agent-row users-grid no-cursor" style="animation-delay:<%= i * 0.04 %>s;">
+          <div class="agent-info">
+            <div class="agent-name-wrap">
+              <div class="agent-name"><%= u.username %></div>
+            </div>
+          </div>
+          <div>
+            <span class="difficulty-badge <%= u.role === 'ADMIN' ? 'role-duelist' : 'role-initiator' %>">
+              <%= u.role %>
+            </span>
+          </div>
+          <div class="action-links-cell">
+            <% if (typeof currentUser !== 'undefined' && currentUser && currentUser.role === 'ADMIN' && u.username !== currentUser.username) { %>
+              <form method="POST" action="/users/<%= u._id %>/delete"
+                    onsubmit="return confirm('Gebruiker <%= u.username %> verwijderen?')">
+                <button type="submit" class="delete-btn">Delete ✕</button>
+              </form>
+            <% } %>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+</section>
+
+<%- include("partials/footer") %>

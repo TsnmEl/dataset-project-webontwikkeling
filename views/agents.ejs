@@ -1,11 +1,61 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>hey</h1>
-</body>
-</html>
+<% const activePage = 'agents'; %>
+<%- include("partials/header") %>
+
+<section class="page-section active">
+  <div class="topbar">
+    <form class="search-box" method="GET" action="/agents" id="search-form">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input class="search-input" type="text" name="search"
+             placeholder="Search for agents..." value="<%= search %>"
+             id="search-input" autocomplete="off">
+    </form>
+    <div class="page-title">AGENTS</div>
+  </div>
+
+  <div class="agents-page">
+    <% agents.forEach(function(agent, i) { %>
+      <a href="/agents/<%= agent.id %>"
+         class="agent-card <%= roleClass(agent.role.name) %>"
+         style="animation-delay:<%= i * 0.03 %>s;">
+        <div class="agent-card-image">
+          <div class="agent-card-image-placeholder">
+            <img src="<%= agent.fullImageUrl %>" alt="<%= agent.name %>">
+          </div>
+          <div class="role-stripe <%= roleClass(agent.role.name) %>"></div>
+          <div class="role-corner"><%= agent.role.name %></div>
+        </div>
+        <div class="agent-card-body">
+          <div class="agent-card-name"><%= agent.name %></div>
+          <div class="agent-card-desc"><%= agent.description %></div>
+          <div class="agent-card-stats">
+            <div class="stat-row">
+              <span class="stat-label">Agent Number</span>
+              <span class="stat-value"><%= agent.agentNumber %></span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Origin</span>
+              <span class="stat-value"><%= agent.origin %></span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Release Date</span>
+              <span class="stat-value"><%= agent.releaseDate %></span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Difficulty</span>
+              <span class="stat-value"><%= agent.difficulty %></span>
+            </div>
+            <div class="stat-row">
+              <span class="stat-label">Beginner Friendly</span>
+              <span class="stat-value"><%= agent.beginnerFriendly ? 'Yes' : 'No' %></span>
+            </div>
+          </div>
+        </div>
+      </a>
+    <% }); %>
+  </div>
+</section>
+
+<%- include("partials/footer") %>
+

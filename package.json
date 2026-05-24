@@ -1,5 +1,5 @@
 {
-  "name": "dataset-project-webontwikkeling",
+  "name": "project",
   "version": "1.0.0",
   "description": "",
   "homepage": "https://github.com/TsnmEl/dataset-project-webontwikkeling#readme",
@@ -19,17 +19,19 @@
     "start": "nodemon index.ts"
   },
   "devDependencies": {
+    "@types/bcrypt": "^6.0.0",
     "@types/ejs": "^3.1.5",
     "@types/express": "^5.0.6",
-    "@types/node": "^25.5.0",
-    "@types/readline-sync": "^1.4.8"
+    "@types/express-session": "^1.19.0",
+    "@types/node": "^25.9.1"
   },
   "dependencies": {
-    "ejs": "^5.0.1",
+    "bcrypt": "^6.0.0",
+    "ejs": "^5.0.2",
     "express": "^5.2.1",
+    "express-session": "^1.19.0",
+    "mongodb": "^7.2.0",
     "nodemon": "^3.1.14",
-    "readline-sync": "^1.4.10",
-    "ts-node": "^10.9.2",
-    "typescript": "^6.0.3"
+    "ts-node": "^10.9.2"
   }
 }

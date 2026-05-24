@@ -1,0 +1,144 @@
+<% const activePage = 'agents'; %>
+<% const roleSlug = agent.role.name.toLowerCase(); %>
+<%- include("partials/header") %>
+
+<section class="page-section active">
+  <div class="topbar">
+    <a href="/agents" class="action-link back-link">⇦ Back</a>
+  </div>
+
+  <div class="detail-layout agent">
+
+    <div class="detail-image-col">
+      <div class="detail-image-box role-border-<%= roleSlug %>">
+        <img src="<%= agent.fullImageUrl %>" alt="<%= agent.name %>"
+             class="role-glow-<%= roleSlug %>">
+      </div>
+      <% if (typeof currentUser !== 'undefined' && currentUser && currentUser.role === 'ADMIN') { %>
+        <button class="edit-toggle-btn role-btn-<%= roleSlug %>" id="edit-toggle-btn">
+          ✎ &nbsp;Edit Agent
+        </button>
+      <% } %>
+    </div>
+
+    <div>
+      <div class="detail-title"><%= agent.name.toUpperCase() %></div>
+      <div class="detail-subtitle role-color-<%= roleSlug %>"><%= agent.role.name %></div>
+      <div class="detail-desc"><%= agent.description %></div>
+
+      <div class="stats-grid">
+        <div class="stat-box">
+          <div class="stat-box-label">Agent Number</div>
+          <div class="stat-box-value">#<%= agent.agentNumber %></div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-label">Origin</div>
+          <div class="stat-box-value"><%= agent.origin %></div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-label">Release Date</div>
+          <div class="stat-box-value"><%= agent.releaseDate %></div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-label">Race</div>
+          <div class="stat-box-value"><%= agent.race %></div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-label">Difficulty</div>
+          <div class="stat-box-value"><%= agent.difficulty %></div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-label">Beginner Friendly</div>
+          <div class="stat-box-value"><%= agent.beginnerFriendly ? 'Yes' : 'No' %></div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-label">Playstyle</div>
+          <div class="stat-box-value"><%= agent.role.playstyle %></div>
+        </div>
+        <div class="stat-box">
+          <div class="stat-box-label">Role</div>
+          <a href="/roles/<%= agent.role.name %>"
+             class="stat-box-value role-link role-color-<%= roleSlug %>">
+            <%= agent.role.name %>
+          </a>
+        </div>
+      </div>
+
+      <div class="detail-section-label role-color-<%= roleSlug %>">SPECIAL ABILITIES</div>
+      <div class="tags-row">
+        <% agent.abilities.forEach(function(ab) { %>
+          <% const videoUrl = abilityVideos[ab]; %>
+          <span class="ability-tag role-tag-<%= roleSlug %> <%= videoUrl ? 'ability-clickable' : '' %>"
+                <% if (videoUrl) { %>data-video-url="<%= videoUrl %>" data-video-name="<%= ab %>"<% } %>>
+            <%= ab %><% if (videoUrl) { %> <% } %>
+          </span>
+        <% }); %>
+      </div>
+      <div class="ability-hint">Click on an ability to watch the video.</div>
+    </div>
+  </div>
+
+  <% if (typeof currentUser !== 'undefined' && currentUser && currentUser.role === 'ADMIN') { %>
+  <div id="edit-panel" class="edit-panel edit-panel--hidden">
+    <div class="edit-panel-header role-header-<%= roleSlug %>">
+      <span class="edit-panel-title role-color-<%= roleSlug %>">EDIT ➜ <%= agent.name.toUpperCase() %></span>
+      <button class="video-popup-close" id="edit-panel-close">✕</button>
+    </div>
+
+    <form action="/agents/<%= agent.id %>/edit" method="POST" class="edit-form">
+
+      <div class="edit-field edit-field--full">
+        <label class="edit-label">Description</label>
+        <textarea name="description" class="edit-input edit-textarea" rows="3"><%= agent.description %></textarea>
+      </div>
+
+      <div class="edit-field">
+        <label class="edit-label">Origin</label>
+        <input type="text" name="origin" class="edit-input" value="<%= agent.origin %>">
+      </div>
+
+      <div class="edit-field">
+        <label class="edit-label">Difficulty</label>
+        <input type="text" name="difficulty" class="edit-input" value="<%= agent.difficulty %>">
+      </div>
+
+      <div class="edit-field">
+        <label class="edit-label">Beginner Friendly</label>
+        <select name="beginnerFriendly" class="edit-input edit-select">
+          <option value="true"  <%= agent.beginnerFriendly ? 'selected' : '' %>>Yes</option>
+          <option value="false" <%= agent.beginnerFriendly ? '' : 'selected' %>>No</option>
+        </select>
+      </div>
+
+      <div class="edit-field">
+        <label class="edit-label">Role</label>
+        <select name="roleName" class="edit-input edit-select">
+          <% ['Duelist','Controller','Sentinel','Initiator'].forEach(function(r) { %>
+            <option value="<%= r %>" <%= agent.role.name === r ? 'selected' : '' %>><%= r %></option>
+          <% }); %>
+        </select>
+      </div>
+
+      <div class="edit-actions">
+        <button type="button" class="edit-btn edit-btn--cancel" id="edit-cancel-btn">Cancel</button>
+        <button type="submit" class="edit-btn edit-btn--save role-save-btn-<%= roleSlug %>">Save Changes</button>
+      </div>
+
+    </form>
+  </div>
+  <% } %>
+</section>
+
+<div id="video-popup" class="video-popup">
+  <div class="video-popup-inner">
+    <div class="video-popup-header">
+      <span id="video-title" class="video-popup-title"></span>
+      <button class="video-popup-close">✕</button>
+    </div>
+    <video id="popup-video" class="video-popup-video" controls></video>
+  </div>
+</div>
+
+<%- include("partials/footer") %>
+
+<script src="/js/agent-detail.js"></script>

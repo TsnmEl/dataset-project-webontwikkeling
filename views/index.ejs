@@ -1,0 +1,90 @@
+<% const activePage = 'home'; %>
+<%- include("partials/header") %>
+
+<section class="page-section active">
+
+  <div class="topbar">
+    <form class="search-box" method="GET" action="/home" id="search-form">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <circle cx="11" cy="11" r="8"/><path d="m21 21-4.35-4.35"/>
+      </svg>
+      <input class="search-input" type="text" name="search"
+             placeholder="Search for agents..." value="<%= search %>"
+             id="search-input" autocomplete="off">
+      <input type="hidden" name="role" value="<%= roleFilter %>">
+      <input type="hidden" name="sort" value="<%= sortKey %>">
+      <input type="hidden" name="dir"  value="<%= sortDir === 1 ? 'asc' : 'desc' %>">
+    </form>
+    <div class="page-title">HOME</div>
+  </div>
+
+  <div class="filter-bar">
+    <% const roleOptions = ['all', 'Duelist', 'Controller', 'Sentinel', 'Initiator']; %>
+    <% roleOptions.forEach(function(r) { %>
+      <a href="/home?role=<%= r %>&search=<%= encodeURIComponent(search) %>&sort=<%= sortKey %>&dir=<%= sortDir === 1 ? 'asc' : 'desc' %>"
+         class="filter-btn <%= r.toLowerCase() %> <%= roleFilter === r ? 'active' : '' %>">
+        <% if (r !== 'all') { %>
+          <img src="/assets/roles/<%= r %>ClassSymbol.png" alt="" class="roleIcon">
+        <% } %>
+        <%= r === 'all' ? 'All' : r %>
+      </a>
+    <% }); %>
+  </div>
+
+  <div class="table-container">
+    <div class="table-header">
+      <div class="col-label sortable <%= sortKey === 'name' ? 'sorted' : '' %>">
+        <a class="sort-link" href="/home?sort=name&dir=<%= sortKey === 'name' && sortDir === 1 ? 'desc' : 'asc' %>&role=<%= roleFilter %>&search=<%= encodeURIComponent(search) %>">
+          NAME <span class="sort-arrow"><%= sortKey === 'name' ? (sortDir === 1 ? '▲' : '▼') : '▲' %></span>
+        </a>
+      </div>
+      <div class="col-label sortable <%= sortKey === 'releaseDate' ? 'sorted' : '' %>">
+        <a class="sort-link" href="/home?sort=releaseDate&dir=<%= sortKey === 'releaseDate' && sortDir === 1 ? 'desc' : 'asc' %>&role=<%= roleFilter %>&search=<%= encodeURIComponent(search) %>">
+          RELEASE DATE <span class="sort-arrow"><%= sortKey === 'releaseDate' ? (sortDir === 1 ? '▲' : '▼') : '▲' %></span>
+        </a>
+      </div>
+      <div class="col-label">SPECIAL ABILITIES</div>
+      <div class="col-label">DIFFICULTY</div>
+      <div class="col-label">BEGINNER FRIENDLY</div>
+      <div class="col-label">DETAILS</div>
+    </div>
+
+    <div id="agents-list">
+      <% if (agents.length === 0) { %>
+        <div class="empty-state">No agents found.</div>
+      <% } %>
+
+      <% agents.forEach(function(agent, i) { %>
+        <div class="agent-row <%= roleClass(agent.role.name) %>"
+             style="animation-delay:<%= i * 0.04 %>s;"
+             data-agent-id="<%= agent.id %>">
+          <div class="agent-info">
+            <div class="agent-avatar">
+              <img src="<%= agent.imageUrl %>" alt="<%= agent.name %>">
+            </div>
+            <div class="agent-name-wrap">
+              <div class="agent-name"><%= agent.name %></div>
+              <div class="agent-role"><%= agent.role.name %></div>
+            </div>
+          </div>
+          <div class="releaseDate"><%= agent.releaseDate %></div>
+          <div class="abilities-cell">
+            <% agent.abilities.forEach(function(ab) { %>
+              <span class="ability-tag"><%= ab %></span>
+            <% }); %>
+          </div>
+          <div><span class="difficulty-badge"><%= agent.difficulty %></span></div>
+          <div><span class="active-dot <%= agent.beginnerFriendly ? 'on' : 'off' %>"></span></div>
+          <div class="action-links-cell">
+            <a class="action-link" href="/agents/<%= agent.id %>">View →</a>
+            <% if (typeof currentUser !== 'undefined' && currentUser && currentUser.role === 'ADMIN') { %>
+              <a class="action-link" href="/agents/<%= agent.id %>#edit">Edit →</a>
+            <% } %>
+          </div>
+        </div>
+      <% }); %>
+    </div>
+  </div>
+</section>
+
+<%- include("partials/footer") %>
