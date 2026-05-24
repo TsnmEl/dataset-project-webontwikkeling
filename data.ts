@@ -65,7 +65,7 @@ export const AbilityVideos: Record<string, string> = {
   // Astra
   'Gravity Well': 'https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/3439c939846214067561746668bfd96805efc225.mp4?accountingTag=VAL',
   'Nova Pulse': 'https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/e54ed10355d571c15ef2ee5a0897cca06851fd56.mp4?accountingTag=VAL',
-  'Nebula / Dissipate': 'https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/2aafadb8cef8c1ab2894a657c23988e921b006c8.mp4?accountingTag=VAL',
+  'Nebula': 'https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/2aafadb8cef8c1ab2894a657c23988e921b006c8.mp4?accountingTag=VAL',
   'Astral Form / Cosmic Divide': 'https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/6bed3444d432f27cdac08f3be1dad2760be7052f.mp4?accountingTag=VAL',
   // Brimstone
   'Incendiary': 'https://cmsassets.rgpub.io/sanity/files/dsfx7636/game_data/9df59d490062acceb7c6ca32a3650b55718381f7.mp4?accountingTag=VAL',
