@@ -7,6 +7,7 @@
     <a href="/agents" class="action-link back-link">⇦ Back</a>
   </div>
 
+  <!-- DETAILS AGENT -->
   <div class="detail-layout agent">
 
     <div class="detail-image-col">
@@ -65,7 +66,7 @@
       </div>
 
       <div class="detail-section-label role-color-<%= roleSlug %>">SPECIAL ABILITIES</div>
-      <div class="tags-row">
+      <div class="abilities-row">
         <% agent.abilities.forEach(function(ab) { %>
           <% const videoUrl = abilityVideos[ab]; %>
           <span class="ability-tag role-tag-<%= roleSlug %> <%= videoUrl ? 'ability-clickable' : '' %>"
@@ -78,6 +79,18 @@
     </div>
   </div>
 
+  <!-- VIDEO POPUP -->
+  <div id="video-popup" class="video-popup">
+    <div class="video-popup-inner">
+      <div class="video-popup-header">
+        <span id="video-title" class="video-popup-title"></span>
+        <button class="video-popup-close">✕</button>
+      </div>
+      <video id="popup-video" class="video-popup-video" controls></video>
+    </div>
+  </div>
+
+  <!-- EDIT PANEL -->
   <% if (typeof currentUser !== 'undefined' && currentUser && currentUser.role === 'ADMIN') { %>
   <div id="edit-panel" class="edit-panel edit-panel--hidden">
     <div class="edit-panel-header role-header-<%= roleSlug %>">
@@ -128,16 +141,6 @@
   </div>
   <% } %>
 </section>
-
-<div id="video-popup" class="video-popup">
-  <div class="video-popup-inner">
-    <div class="video-popup-header">
-      <span id="video-title" class="video-popup-title"></span>
-      <button class="video-popup-close">✕</button>
-    </div>
-    <video id="popup-video" class="video-popup-video" controls></video>
-  </div>
-</div>
 
 <%- include("partials/footer") %>
 

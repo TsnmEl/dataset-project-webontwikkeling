@@ -52,7 +52,7 @@ const requireAdmin = (req: Request, res: Response, next: NextFunction): void => 
 
 app.get('/', (_req, res) => res.redirect('/home'));
 
-/* LOGIN */
+/* LOGIN & REGISTER */
 app.get('/login', requireGuest, (_req, res) => {
     res.render('login', { error: null });
 });
@@ -97,7 +97,7 @@ app.post('/register', requireGuest, async (req, res) => {
     }
 });
 
-/* HOME */
+/* SORT & FILTER */
 app.get('/home', requireLogin, async (req, res) => {
     try {
         let agents = await getAgents();
@@ -106,7 +106,7 @@ app.get('/home', requireLogin, async (req, res) => {
 
         const search = (req.query.search as string) ?? '';
         const roleFilter = (req.query.role as string) ?? 'all';
-        const sortKey = (req.query.sort   as string) ?? 'name';
+        const sortKey = (req.query.sort as string) ?? 'name';
         const sortDir = req.query.dir === 'desc' ? -1 : 1;
 
         if (search)
@@ -126,7 +126,7 @@ app.get('/home', requireLogin, async (req, res) => {
     }
 });
 
-/* AGENTS */
+/* SEARCH BAR */
 app.get('/agents', requireLogin, async (req, res) => {
     try {
         let agents = await getAgents();
@@ -142,10 +142,9 @@ app.get('/agents', requireLogin, async (req, res) => {
 /* AGENT DETAIL */
 app.get('/agents/:id', requireLogin, async (req, res) => {
     try {
-        const agents  = await getAgents();
+        const agents = await getAgents();
         const paramId = req.params.id as string;
-        const agent   = agents.find(a => a.id === paramId || a.name.toLowerCase() === paramId.toLowerCase());
-        if (!agent) return res.status(404).send('Agent niet gevonden');
+        const agent = agents.find(a => a.id === paramId || a.name.toLowerCase() === paramId.toLowerCase());
         res.render('agent-detail', { agent, roleClass, roleColor, abilityVideos: AbilityVideos, currentUser: req.session.user });
     } catch (err) {
         console.error(err);
@@ -205,7 +204,7 @@ app.get('/users', requireLogin, async (req, res) => {
     }
 });
 
-/* USER DELETE */
+/* DELETE USER */
 app.post('/users/:id/delete', requireAdmin, async (req, res) => {
     try {
         await deleteUser(new ObjectId(req.params.id as string));

@@ -9,9 +9,9 @@
   <div class="table-container">
     <div class="table-header roles-grid">
       <div class="col-label">ROLE</div>
-      <div class="col-label">PLAYSTYLE</div>
+      <div id="playstyle-col" class="col-label">PLAYSTYLE</div>
       <div class="col-label">DESCRIPTION</div>
-      <div class="col-label">RESPONSIBILITY</div>
+      <div id="responsibility-col" class="col-label">RESPONSIBILITY</div>
     </div>
 
     <% roles.forEach(function(role, i) { %>
@@ -28,7 +28,7 @@
           </div>
           <div class="playstyle white"><%= role.playstyle %></div>
           <div class="description"><%= role.description %></div>
-          <div class="responsability italic"><%= role.primaryResponsibility %></div>
+          <div class="responsibility italic"><%= role.primaryResponsibility %></div>
         </div>
       </a>
     <% }); %>

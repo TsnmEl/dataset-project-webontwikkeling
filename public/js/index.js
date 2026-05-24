@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+  /* LOADING SCREEN */
   const loading = document.getElementById('loading');
   if (loading && new URLSearchParams(window.location.search).has('welcome')) {
     loading.classList.remove('loading-hidden');
@@ -9,14 +10,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }, 3000);
   }
 
+  /* AGENT ROWS */
   document.querySelectorAll('.agent-row[data-agent-id]').forEach(row => {
     row.addEventListener('click', () => window.location.href = '/agents/' + row.dataset.agentId);
   });
 
+  /* PREVENT ERROR VIEW LINKS */
   document.querySelectorAll('.action-link').forEach(link => {
     link.addEventListener('click', e => e.stopPropagation());
   });
 
+  /* SEARCH BAR */
   const input = document.getElementById('search-input');
   const form = document.getElementById('search-form');
   if (input && form) {

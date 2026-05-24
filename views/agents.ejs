@@ -2,6 +2,7 @@
 <%- include("partials/header") %>
 
 <section class="page-section active">
+  <!-- SEARCH BAR -->
   <div class="topbar">
     <form class="search-box" method="GET" action="/agents" id="search-form">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -14,6 +15,7 @@
     <div class="page-title">AGENTS</div>
   </div>
 
+  <!-- AGENT CARDS GRID -->
   <div class="agents-page">
     <% agents.forEach(function(agent, i) { %>
       <a href="/agents/<%= agent.id %>"

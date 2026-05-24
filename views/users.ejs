@@ -16,7 +16,7 @@
 
     <div id="agents-list">
       <% if (!allUsers || allUsers.length === 0) { %>
-        <div class="empty-state">Geen gebruikers gevonden.</div>
+        <div class="empty-state">No users found.</div>
       <% } %>
 
       <% allUsers.forEach(function(u, i) { %>
@@ -34,7 +34,7 @@
           <div class="action-links-cell">
             <% if (typeof currentUser !== 'undefined' && currentUser && currentUser.role === 'ADMIN' && u.username !== currentUser.username) { %>
               <form method="POST" action="/users/<%= u._id %>/delete"
-                    onsubmit="return confirm('Gebruiker <%= u.username %> verwijderen?')">
+                    onsubmit="return confirm('Delete user <%= u.username %>?')">
                 <button type="submit" class="delete-btn">Delete ✕</button>
               </form>
             <% } %>

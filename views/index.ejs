@@ -3,6 +3,7 @@
 
 <section class="page-section active">
 
+  <!-- SEARCH BAR -->
   <div class="topbar">
     <form class="search-box" method="GET" action="/home" id="search-form">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -18,6 +19,7 @@
     <div class="page-title">HOME</div>
   </div>
 
+  <!-- FILTER BAR -->
   <div class="filter-bar">
     <% const roleOptions = ['all', 'Duelist', 'Controller', 'Sentinel', 'Initiator']; %>
     <% roleOptions.forEach(function(r) { %>
@@ -31,6 +33,7 @@
     <% }); %>
   </div>
 
+  <!-- AGENTS TABLE -->
   <div class="table-container">
     <div class="table-header">
       <div class="col-label sortable <%= sortKey === 'name' ? 'sorted' : '' %>">

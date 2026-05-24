@@ -1,13 +1,15 @@
 import { Collection, MongoClient, ObjectId } from 'mongodb';
 import bcrypt from 'bcrypt';
 import { Agent, Role, RoleCounts, User } from './types';
+import dotenv from 'dotenv';
+dotenv.config();
 
-const MONGO_URI = process.env.MONGO_URI ?? '';
+const uri = process.env.MONGO_URI ?? '';
 const AGENTS_URL = 'https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/refs/heads/main/public/data/agents.json';
 const ROLES_URL = 'https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/refs/heads/main/public/data/roles.json';
 const SALT_ROUNDS = 10;
 
-export const client = new MongoClient(MONGO_URI);
+export const client = new MongoClient(uri);
 
 export const agentsCollection:Collection<Agent> = client.db('Valorant').collection<Agent>('Agents');
 export const rolesCollection:Collection<Role> = client.db('Valorant').collection<Role>('Roles');
@@ -15,7 +17,7 @@ export const usersCollection:Collection<User> = client.db('Valorant').collection
 
 async function seed(): Promise<void> {
     if (await agentsCollection.countDocuments() === 0) {
-        const res    = await fetch(AGENTS_URL);
+        const res = await fetch(AGENTS_URL);
         const agents: Agent[] = await res.json();
         await agentsCollection.insertMany(agents as any[]);
         console.log(`[db] ${agents.length} agents opgeslagen [✓]`);
@@ -25,7 +27,7 @@ async function seed(): Promise<void> {
 
     if (await rolesCollection.countDocuments() === 0) {
         console.log('[db] Roles ophalen...');
-        const res  = await fetch(ROLES_URL);
+        const res = await fetch(ROLES_URL);
         const roles: Role[] = await res.json();
         await rolesCollection.insertMany(roles as any[]);
         console.log(`[db] ${roles.length} roles opgeslagen [✓]`);
@@ -62,7 +64,7 @@ export async function connect(): Promise<void> {
         await client.connect();
         console.log('[db] Verbonden met MongoDB [✓]');
         await seed();
-        process.on('SIGINT',  exit);
+        process.on('SIGINT', exit);
         process.on('SIGUSR2', exit);
     } catch (error) {
         console.error(error);

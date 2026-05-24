@@ -1,39 +1,7 @@
-import express from 'express';
-import ejs from 'ejs';
-import { Agent, Role, RoleCounts, AppData } from './types';
-import path from 'path';
-import { MongoClient, ObjectId } from "mongodb";
+import { Agent, Role } from './types';
  
 const AGENTS_URL = 'https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/refs/heads/main/public/data/agents.json';
 const ROLES_URL = 'https://raw.githubusercontent.com/TsnmEl/dataset-project-webontwikkeling/refs/heads/main/public/data/roles.json';
-
-const uri = process.env.MONGO_URI ?? '';
-const client = new MongoClient(uri);
-
-export async function loadDatabase() {
-    let agents : Agent[];
-    try {
-        await client.connect();
-
-        let cursor = await client.db("Valorant").collection("Agents").find<Agent>({});
-        agents = await cursor.toArray();
-        agents = await loadAgentData();
-
-        for (const agent of agents) {
-            if (agents != null) {
-            await client.db("Valorant").collection("Agents").insertOne({
-                _id: agent.id as any,
-            ... agent
-            })}
-        }
-    } 
-    catch (error) {
-        console.error(error);
-    }
-    finally {
-        await client.close();
-    }
-}
 
 export async function loadAgentData(): Promise<Agent[]> {
     let agentInfo : Agent[];

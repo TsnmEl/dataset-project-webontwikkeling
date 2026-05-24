@@ -46,6 +46,14 @@ body::before {
   opacity: 0.4;
 }
 
+.main { 
+  margin-left: 220px; 
+  min-height: 100vh; 
+  position: relative; 
+  z-index: 1; 
+}
+
+/* NAVIGATION */
 .sidebar {
   position: fixed;
   left: 0; 
@@ -121,30 +129,14 @@ body::before {
   background: var(--red);
 }
 
-.nav-item svg { 
+.nav-icon { 
   width: 18px; 
   height: 18px; 
   flex-shrink: 0; 
   opacity: 0.7; 
 }
-.nav-item.active svg { 
-  opacity: 1; 
-}
 
-.main { 
-  margin-left: 220px; 
-  min-height: 100vh; 
-  position: relative; 
-  z-index: 1; 
-}
-
-.page-section { 
-  display: none; 
-}
-.page-section.active { 
-  display: block; 
-}
-
+/* PAGE HEADER */
 .topbar {
   padding: 34px 60px;
   display: flex;
@@ -200,6 +192,7 @@ body::before {
   border-color: var(--red); 
 }
 
+/* FILTER */
 .filter-bar {
   padding: 16px 60px;
   display: flex;
@@ -252,6 +245,7 @@ body::before {
   border-color: var(--initiator); 
 }
 
+/* HOMEPAGE TABLE */
 .table-container { 
   padding: 0 40px 60px; 
 }
@@ -286,10 +280,26 @@ body::before {
 .col-label.sorted { 
   color: var(--red); 
 }
+
+.sort-link {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
 .sort-arrow { 
   font-size: 8px; 
 }
 
+.empty-state {
+  padding: 40px;
+  text-align: center;
+  color: var(--off-white);
+  letter-spacing: 2px;
+}
+
+/* AGENT ROWS */
 .agent-row {
   display: grid;
   grid-template-columns: 1.7fr 1fr 2fr 0.8fr 0.5fr 0.8fr;
@@ -396,7 +406,7 @@ body::before {
   font-variant-numeric: tabular-nums;
 }
 
-.playstyle, .description, .responsability {
+.playstyle, .description, .responsibility {
   font-size: 13px;
   color: var(--off-white);
   letter-spacing: 1px;
@@ -407,7 +417,7 @@ body::before {
 .playstyle    { 
   margin-left: -15px; 
 }
-.responsability { 
+.responsibility { 
   margin-left: 25px; 
 }
 
@@ -426,6 +436,11 @@ body::before {
   text-transform: uppercase;
   clip-path: polygon(0 0,calc(100% - 5px) 0,100% 5px,100% 100%,5px 100%,0 calc(100% - 5px));
   white-space: nowrap;
+}
+
+.tags-row {
+  display: flex;
+  gap: 8px;
 }
 
 .role-duelist.ability-tag {
@@ -447,6 +462,63 @@ body::before {
   border-color: var(--initiator);
   color: var(--white);
   text-decoration: none;
+}
+
+.role-duelist .ability-tag {
+  border-color: var(--duelist);
+  color: var(--duelist);
+  text-decoration: none;
+}
+.role-controller .ability-tag {
+  border-color: var(--controller);
+  color: var(--controller);
+  text-decoration: none;
+}
+.role-sentinel .ability-tag {
+  border-color: var(--sentinel);
+  color: var(--sentinel);
+  text-decoration: none;
+}
+.role-initiator .ability-tag {
+  border-color: var(--initiator);
+  color: var(--initiator);
+  text-decoration: none;
+}
+
+.role-tag-duelist    { 
+  border-color: var(--duelist);   
+  color: var(--white); 
+}
+.role-tag-controller { 
+  border-color: var(--controller);  
+  color: var(--white); 
+}
+.role-tag-sentinel   { 
+  border-color: var(--sentinel);   
+  color: var(--white); 
+}
+.role-tag-initiator  { 
+  border-color: var(--initiator);  
+  color: var(--white); 
+}
+
+.ability-hint {
+  font-size: 10px;
+  letter-spacing: 1px;
+  color: var(--off-white);
+  margin-top: 8px;
+}
+
+.difficulty-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 14px;
+  margin-left: -15px;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: 700;
+  clip-path: polygon(0 0,calc(100% - 6px) 0,100% 6px,100% 100%,6px 100%,0 calc(100% - 6px));
 }
 
 .active-dot { 
@@ -487,27 +559,7 @@ body::before {
   margin: 0 2px 0 -8px; 
 }
 
-.role-duelist .ability-tag { 
-  border-color: rgba(255,70,85,0.4);  
-  color: var(--duelist); 
-  background: rgba(255,70,85,0.08); 
-}
-.role-controller .ability-tag { 
-  border-color: rgba(156,92,255,0.4); 
-  color: var(--controller); 
-  background: rgba(156,92,255,0.08); 
-}
-.role-sentinel .ability-tag { 
-  border-color: rgba(0,200,190,0.4);  
-  color: var(--cyan); 
-  background: rgba(0,200,190,0.08); 
-}
-.role-initiator .ability-tag { 
-  border-color: rgba(245,166,35,0.4); 
-  color: var(--initiator); 
-  background: rgba(245,166,35,0.08); 
-}
-
+/* AGENTS PAGE */
 .agents-page {
   padding: 32px 50px 60px;
   display: grid;
@@ -642,6 +694,12 @@ body::before {
   font-weight: 700; 
 }
 
+/* AGENT DETAIL PAGE */
+.back-link { 
+  margin-right: auto; 
+  padding: 15px 0; 
+}
+
 .detail-layout {
   padding: 40px 60px 60px;
   display: grid;
@@ -654,6 +712,12 @@ body::before {
 }
 .detail-layout.role  { 
   grid-template-columns: 260px 1fr; 
+}
+
+.detail-image-col {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
 }
 
 .detail-image-box {
@@ -671,6 +735,32 @@ body::before {
   width: 150%; 
   margin-bottom: 0px;
   object-fit: cover; 
+}
+
+.role-glow-duelist    { 
+  filter: drop-shadow(0 0 24px var(--duelist)); 
+}
+.role-glow-controller { 
+  filter: drop-shadow(0 0 24px var(--controller)); 
+}
+.role-glow-sentinel   { 
+  filter: drop-shadow(0 0 24px var(--sentinel)); 
+}
+.role-glow-initiator  { 
+  filter: drop-shadow(0 0 24px var(--initiator)); 
+}
+
+.role-border-duelist    { 
+  border-color: var(--duelist); 
+}
+.role-border-controller { 
+  border-color: var(--controller); 
+}
+.role-border-sentinel   { 
+  border-color: var(--sentinel); 
+}
+.role-border-initiator  { 
+  border-color: var(--initiator); 
 }
 
 .detail-role-box {
@@ -715,6 +805,13 @@ body::before {
   filter: drop-shadow(0 0 20px var(--initiator));
 }
 
+.detail-role-title {
+  font-family: var(--font-title);
+  font-size: 40px;
+  letter-spacing: 4px;
+  font-weight: 700;
+}
+
 .detail-title {
   font-family: var(--font-title);
   font-size: 64px;
@@ -723,13 +820,6 @@ body::before {
   color: var(--white);
   line-height: 1;
   margin-bottom: 8px;
-}
-
-.detail-role-title {
-  font-family: var(--font-title);
-  font-size: 40px;
-  letter-spacing: 4px;
-  font-weight: 700;
 }
 
 .detail-subtitle {
@@ -832,85 +922,23 @@ body::before {
   margin-bottom: 12px;
 }
 
-.tags-row { 
+.abilities-row { 
   display: flex; 
   flex-wrap: wrap; 
   gap: 8px; 
 }
-.tags-row.gap10 { 
+.abilities-row.gap10 { 
   gap: 10px; 
 }
 
-.sort-link {
-  color: inherit;
-  text-decoration: none;
-  display: flex;
-  align-items: center;
-  gap: 6px;
+.ability-clickable { 
+  cursor: pointer; 
 }
- 
-.empty-state {
-  padding: 40px;
-  text-align: center;
-  color: var(--off-white);
-  letter-spacing: 2px;
+.ability-clickable:hover { 
+  opacity: 0.8; 
 }
 
-.roles-grid { 
-  grid-template-columns: 0.8fr 0.4fr 1fr 1.3fr; 
-}
-
-.row-link { 
-  text-decoration: none; 
-}
-
-.role-avatar { 
-  display: flex; 
-  align-items: center; 
-  justify-content: center; 
-}
-.role-avatar img { 
-  width: 32px; 
-  height: 32px; 
-}
-
-.role-duelist.role-avatar {
-  border-color: var(--duelist);
-}
-.role-controller.role-avatar {
-  border-color: var(--controller);
-}
-.role-sentinel.role-avatar {
-  border-color: var(--sentinel);
-}
-.role-initiator.role-avatar {
-  border-color: var(--initiator);
-}
-
-.playstyle.white { 
-  color: var(--white); 
-}
-.responsability.italic { 
-  font-style: italic; 
-}
-
-.difficulty-badge {
-  display: inline-flex;
-  align-items: center;
-  padding: 5px 14px;
-  margin-left: -15px;
-  font-size: 11px;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: 700;
-  clip-path: polygon(0 0,calc(100% - 6px) 0,100% 6px,100% 100%,6px 100%,0 calc(100% - 6px));
-}
-
-.back-link { 
-  margin-right: auto; 
-  padding: 15px 0; 
-}
-
+/* ABILITY VIDEO POPUP */
 .video-popup {
   display: none;
   position: fixed;
@@ -984,90 +1012,8 @@ body::before {
   width: 100%; 
   display: block; 
 }
- 
-.ability-clickable { 
-  cursor: pointer; 
-}
-.ability-clickable:hover { 
-  opacity: 0.8; 
-}
- 
-.ability-hint {
-  font-size: 10px;
-  letter-spacing: 1px;
-  color: var(--off-white);
-  margin-top: 8px;
-}
 
-.detail-image-col {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
-}
-
-.role-border-duelist    { 
-  border-color: var(--duelist); 
-}
-.role-border-controller { 
-  border-color: var(--controller); 
-}
-.role-border-sentinel   { 
-  border-color: var(--sentinel); 
-}
-.role-border-initiator  { 
-  border-color: var(--initiator); 
-}
-
-.role-glow-duelist    { 
-  filter: drop-shadow(0 0 24px var(--duelist)); 
-}
-.role-glow-controller { 
-  filter: drop-shadow(0 0 24px var(--controller)); 
-}
-.role-glow-sentinel   { 
-  filter: drop-shadow(0 0 24px var(--sentinel)); 
-}
-.role-glow-initiator  { 
-  filter: drop-shadow(0 0 24px var(--initiator)); 
-}
-
-.role-color-duelist    { 
-  color: var(--duelist); 
-}
-.role-color-controller { 
-  color: var(--controller); 
-}
-.role-color-sentinel   { 
-  color: var(--sentinel); 
-}
-.role-color-initiator  { 
-  color: var(--initiator); 
-}
-
-.role-link { 
-  text-decoration: none; 
-}
-.role-link:hover { 
-  opacity: 0.8; 
-}
-
-.role-tag-duelist    { 
-  border-color: var(--duelist);   
-  color: var(--white); 
-}
-.role-tag-controller { 
-  border-color: var(--controller);  
-  color: var(--white); 
-}
-.role-tag-sentinel   { 
-  border-color: var(--sentinel);   
-  color: var(--white); 
-}
-.role-tag-initiator  { 
-  border-color: var(--initiator);  
-  color: var(--white); 
-}
-
+/* EDIT AGENT */
 .edit-toggle-btn {
   width: 100%;
   padding: 12px 0;
@@ -1233,6 +1179,75 @@ body::before {
   background: var(--initiator); 
 }
 
+/* ROLES PAGE */
+.roles-grid { 
+  grid-template-columns: 1.5fr 0.7fr 1.5fr 1.3fr; 
+}
+
+#playstyle-col {
+  margin-left: -20px;
+}
+
+#responsibility-col {
+  margin-left: 25px;
+}
+
+.role-avatar { 
+  display: flex; 
+  align-items: center; 
+  justify-content: center; 
+}
+
+.role-avatar img { 
+  width: 32px; 
+  height: 32px; 
+}
+
+.row-link {
+  text-decoration: none;
+}
+
+.role-duelist.role-avatar {
+  border-color: var(--duelist);
+}
+.role-controller.role-avatar {
+  border-color: var(--controller);
+}
+.role-sentinel.role-avatar {
+  border-color: var(--sentinel);
+}
+.role-initiator.role-avatar {
+  border-color: var(--initiator);
+}
+
+.playstyle.white { 
+  color: var(--white); 
+}
+
+.responsibility.italic { 
+  font-style: italic; 
+}
+
+.role-color-duelist    { 
+  color: var(--duelist); 
+}
+.role-color-controller { 
+  color: var(--controller); 
+}
+.role-color-sentinel   { 
+  color: var(--sentinel); 
+}
+.role-color-initiator  { 
+  color: var(--initiator); 
+}
+
+.role-link { 
+  text-decoration: none; 
+}
+.role-link:hover { 
+  opacity: 0.8; 
+}
+
 ::-webkit-scrollbar { 
   width: 4px; 
 }
@@ -1243,6 +1258,7 @@ body::before {
   background: var(--red); 
 }
 
+/* LOGIN PAGE */
 .login-body {
   display: flex;
   align-items: center;
@@ -1491,6 +1507,7 @@ body::before {
   color: var(--red);
 }
 
+/* USERS PAGE */
 .users-grid {
   grid-template-columns: 1.5fr 1.5fr 1fr;
 }

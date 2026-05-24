@@ -7,7 +7,6 @@
   </div>
 
   <div class="detail-layout role">
-
     <div class="detail-role-box <%= roleClass(role.name) %>">
       <img src="<%= role.iconUrl %>" alt="<%= role.name %>"
            class="<%= roleClass(role.name) %>">
@@ -33,7 +32,7 @@
       </div>
 
       <div class="detail-section-label mb12 <%= roleClass(role.name) %>">AGENTS IN THIS ROLE</div>
-      <div class="tags-row gap10">
+      <div class="tags-row">
         <% roleAgents.forEach(function(agent) { %>
           <a href="/agents/<%= agent.id %>"
              class="ability-tag ability-clickable <%= roleClass(role.name) %>">
